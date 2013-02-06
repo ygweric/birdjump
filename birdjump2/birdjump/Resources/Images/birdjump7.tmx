@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="106" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="layer_award" tilewidth="32" tileheight="32" spacing="2">
+  <image source="layer_award.png" width="512" height="256"/>
+ </tileset>
+ <layer name="bonus" width="20" height="106">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA92YwQrDMAxDW8o2ttL//91dVijBii3bcbYddCgFkTovit11WZY1UUey7gM8LXoJivo9L/L4bYLfHvBbBT+0vtvk+jHfFNW2jON5Jmv7Rwd4Rrwh1h4fHeAZ8aaxpvmw9WP9WF3PhsTQjDz9xvyS/LT8QsxuwE9bH2K2rXWvflIWZjPm9RuRf//AEpN92vo2YX96+6XVbzX6VHLE6jwTFqZm9pNevqr5b/PN4tfjn6nliPPprR/bd2ZmX9sf/2oGsn2ftj5r9rXzilY/a/9oVVX2WfnzZGDl2quksdBmn8avdpbaOmr8emdrxJv3rPf8UP0y7tzR/M3IUk//J+3/ySbb/6H1aWxG65eRgcwdnHn3evnz3He9urL/Oaxcaj5oxkVcsvcnw6VFlf/8EJOZs8c33b+92lb3d9JsYrkzEZ9SnS2ZzmRbFZuRrJPezWLLm6Fo77wZqrHlud8QW5YMZdhi9o+dc638RXtA77dHWGR6Zets0Muls0YST2g2qOjlPX6jZOUzOm+g/y+ZYmsenT+1vfun+fPU9UxVMhnlr9UbDJ7RGCAhAAA=
+  </data>
+ </layer>
+</map>

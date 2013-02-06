@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="106" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="layer_award" tilewidth="32" tileheight="32" spacing="2">
+  <image source="layer_award.png" width="512" height="256"/>
+ </tileset>
+ <layer name="bonus" width="20" height="106">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3SoQ0AMRDAsJY86/7r/hJXRaoMTIOy11p70Bn2XWjyrsmXb/zM2/xHyX+U/EfJf5T8R8l/lPxHyX+U/EfJf5T8R2n6vx8t+kFrICEAAA==
+  </data>
+ </layer>
+</map>

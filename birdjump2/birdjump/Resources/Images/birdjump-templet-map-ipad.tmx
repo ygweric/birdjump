@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="40" height="207" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="layer_award" tilewidth="64" tileheight="64" spacing="2">
+  <image source="layer_award-ipad.png" width="512" height="1024"/>
+ </tileset>
+ <layer name="bonus" width="40" height="207">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3WMQrDQBAEQSnx/5+sJxgEps9MVTLpZr3Xdbb78D3dpz4AAH6g7v+//wcA8EbdV/0FYFHdV/0FYFHdV/0FYFHdV/0FYFHdV/0FYFHdV/0FYFHdV/0FYFHdV/0FYFHdV/0FYFHdV/0FYFHdV/0FYFHdV/0FYFHdV/0FYFHdV/0FYFHdV/0FYFHd12/7ADcF8GJggQAA
+  </data>
+ </layer>
+</map>

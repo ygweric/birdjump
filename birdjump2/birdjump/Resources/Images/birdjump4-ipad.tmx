@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="40" height="207" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="layer_award" tilewidth="64" tileheight="64" spacing="2">
+  <image source="layer_award-ipad.png" width="512" height="1024"/>
+ </tileset>
+ <layer name="bonus" width="40" height="207">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+2cwW7DMAxDMxRbNwz5/9/dpQGKIW1sWZQom4eH7LAWhKKGpq1237ZtJ+aD/MrO1+N6f/D94E6g7ZlnXcff2ZrO9D1r7Hn9z4srQp/1/qK0edTv4Lfjf28GfSP9h6zf/88va/+xfn4j+CTQsBq9fn0zvm7W9YHIB/1sRmiMosfDe9YGjPXL8o8K/Sc4GfVHtB/PAnN23zf+tb9H9hzh6tk+mt0r1q/H21v0MfffSHaPur/M9RPnoH119H0qs4rnotb/np6ByCbenuudPyPrZ8me7P0nzxVoss+fZ/bfFlbxaKS+zFzcqi/7/r7KqhXqx9x/CI/23Ednr9/qRPmoNQeLmoysKyLO05hnlQ59kbNeVn2Ms3Kj9avQf2iU/WPI9lf5bzy93hg9X2L5bEXOvlif7RY/tJyxWryRuX4V+i+SFb1x1tlsVt+V/worEc/r0dmjCrOy1eehWbQxahQcRPmr9p/fM+v6zkKF5xeztgNP//ScdWavX4X+E3OQlW9b33d1LOeokV7uudeEeO55zxf1arvyLcR8lqfvZtevRR9z/624VyzaYZu38vJf9jy5EWgQdlryYIUc5b2eQKB9cB9tjBpXJ/t8V/m3jZ4cfLb2iPj9vtF1dMTvR47mOJQXeORg5vpV6D8kysHnsOckNFm+u9L+82rf8fV+1iK+o4rY4269v60Z0svrK9SPuf/knQJFVq5V/hVXWPY6K+y5MWs70J6vjzZGjYKHLF9V/uWBff2MyG8Ifcz3d6R+6DNf9v5T/q1Dtf1snf+KWcjOHpaZLEaUfX20MWoUXLDmXvlvG8rW4/reZUPv9XRvlpw9W0foY+4/Zeu1yT7fvbr+AZ0hef5ggQAA
+  </data>
+ </layer>
+</map>

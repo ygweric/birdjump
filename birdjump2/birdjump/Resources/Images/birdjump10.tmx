@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="106" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="layer_award" tilewidth="32" tileheight="32" spacing="2">
+  <image source="layer_award.png" width="512" height="256"/>
+ </tileset>
+ <layer name="bonus" width="20" height="106">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA82Z22oDMQxEbRanaUP+/3dLIAuLsEYjWVbyICgbx55IRxdve2utJ9oz2W7O9cO5/m9is3V3xWb7/V4M7fcjDO33IPbL1JfhvygP3hg+xZkvO9qcT+259vku/chvbCzZuLKssdwx+g6HvmzuZkysnOXhkWEMscfyJ/27I588PmbYsBi41vp+2U9jFzGq/eYVfbv9t1L3rn6TDHp4zKh/FZxZ+6FaaNUuGQerFkZrq9TXSX27/bfCqKfXonXnsyqGKvoVM8exnCJ9sxhZnLL+G43T5+lPmRapeaheVuRbFWv9HT+vfksfo3+I9eh8b65YzFXfeaya5mHxEzmkxc3yu1UTvL3tdTaqWd7ei86P9t5vs9WZr2L+m+XPAJ8x+2n5Hcl9VH8idw407zH6ZrOJ5qPKWTDKn6c27tabnfPWfdWKjYz17vuq7Mva3KB9h8mjyvt0lD/tufd87++x5iqtTqL9tLmJjccg12vnoTmMmfuivOyOF6sBMWWx94n3L9IicxrydeY7kog+JjeQyZw7DH3ndyrfX7D8Zfbf6PtKT/wYv3j4YmqMV1+Uq6i+M87ac+auvev9zEq/tfrvN5vm55X/vWh3BobRIf62OL2//c/WaItT667N+i+DvxX7B9yRi2kgIQAA
+  </data>
+ </layer>
+</map>

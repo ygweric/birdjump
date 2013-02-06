@@ -1,0 +1,26 @@
+//
+// Prefix header for all source files of the 'Test' target in the 'Test' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iPhone SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Constants.h"
+#import "CUtil.h"
+#import "cocos2d.h"
+#import "SysConfig.h"
+#import "PlaySoundUtil.h"
+#import <mach/mach_time.h>
+#import "SimpleAudioEngine.h"
+#import "MyCustomLayer.h"
+#import "MyCustomButton.h"
+#import "DeviceSettings.h"
+
+#define RANDOM_SEED() srandom((unsigned)(mach_absolute_time() & 0xFFFFFFFF))
+#endif
