@@ -12,7 +12,7 @@
 #import "SlidingMenuGrid.h"
 #import "HelpLayer.h"
 #import "AppDelegate.h"
-#import "InAppPurchaseManager.h"
+
 
 enum  {
     tMenuGrid ,
@@ -191,84 +191,12 @@ enum {
     CCScene* sc=[HelpLayer node];
     [[CCDirector sharedDirector] replaceScene:[CCTransitionSplitRows transitionWithDuration:1.0f scene:sc]];
 }
-#pragma mark  iap
--(void)onShop:(id) sender
+- (void) onShop:(id) sender
 {
-    //确定系统能够处理支付
-    if ([SKPaymentQueue canMakePayments])
-    {
-        // 向用户显示Store
-        //*
-        [self requestProductData];
-         /*/
-        
-        //*/
-        
-        
+    if ([SysConfig needAudio]){
+        [[SimpleAudioEngine sharedEngine] playEffect:@"button_select.mp3"];
     }
-    else
-    {
-        // 警告用户当前禁止应用内购买
-        NSLog(@"ipa is disable by user !!!!!!");
-    }
-}
-- (void) requestProductData
-{
-    SKProductsRequest *request= [[SKProductsRequest alloc]
-                                 initWithProductIdentifiers: [NSSet setWithObject:                                                              @"cn.playba.birdjump.unlockalllevel"]];
-    request.delegate = self;
-    [request start];
-}
-- (void)productsRequest:(SKProductsRequest *)request
-     didReceiveResponse:(SKProductsResponse *)response
-{
-    NSArray *myProduct = response.products;
-    // 把信息显示到Store界面
-    /*
-     2012-12-13 23:28:55.306 birdjump[364:907] ---myProduct:(
-     "<SKProduct: 0x1d053b70>"
-     )
-     */
-    NSLog(@"---myProduct:%@",myProduct);
-    if (myProduct.count>0) {
-
-        SKProduct* pro=[myProduct objectAtIndex:0];
-        /*
-         Product title: unlock all levels
-         Product description: unlock all levels
-         Product price: 6
-         Product id: cn.playba.birdjump.unlockalllevel
-         */
-        NSLog(@"Product title: %@" , pro.localizedTitle);
-        NSLog(@"Product description: %@" , pro.localizedDescription);
-        NSLog(@"Product price: %@" , pro.price);
-        NSLog(@"Product id: %@" , pro.productIdentifier);
-        SKPayment *payment = [SKPayment paymentWithProduct:pro];
-
-        //当用户在Store中选择一项时，应用就创建一个payment对象，并将其添加到payment队列中。
-        [[SKPaymentQueue defaultQueue] addPayment:payment];
-
-    }
-    
-    [request autorelease];
-}
-
-- (void) dealloc
-{
-	[super dealloc];
-}
-// Add new methods to bottom of file
-#pragma mark GCHelperDelegate
-
-- (void)matchStarted {
-    CCLOG(@"Match started");
-}
-
-- (void)matchEnded {
-    CCLOG(@"Match ended");
-}
-
-- (void)match:(GKMatch *)match didReceiveData:(NSData *)data fromPlayer:(NSString *)playerID {
-    CCLOG(@"Received data");
+    CCScene* sc=[HelpLayer node];
+    [[CCDirector sharedDirector] replaceScene:[CCTransitionSplitRows transitionWithDuration:1.0f scene:sc]];
 }
 @end

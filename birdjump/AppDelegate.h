@@ -1,22 +1,24 @@
 //
 //  AppDelegate.h
-//  tweejump
+//  cocos2dDemo
 //
-//  Created by Yannick Loriot on 10/07/12.
-//  Copyright Yannick Loriot 2012. All rights reserved.
+//  Created by Eric on 13-2-21.
+//  Copyright __MyCompanyName__ 2013年. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "cocos2d.h"
 
-@class RootViewController;
+@interface AppController : NSObject <UIApplicationDelegate, CCDirectorDelegate>
+{
+	UIWindow *window_;
+	UINavigationController *navController_;
 
-@interface AppDelegate : NSObject <UIApplicationDelegate> {
-	UIWindow			*window;
-	RootViewController	*viewController;
+	CCDirectorIOS	*director_;							// weak ref
 }
 
 @property (nonatomic, retain) UIWindow *window;
-@property (nonatomic, retain) RootViewController	*viewController;
-//@property (nonatomic, retain) PASoundSource *audioSource;
+@property (readonly) UINavigationController *navController;
+@property (readonly) CCDirectorIOS *director;
 
 @end

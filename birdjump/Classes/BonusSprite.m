@@ -90,9 +90,9 @@
     }
     //4)创建动画对象
     CCAnimation *anim = [CCAnimation
-                         animationWithFrames:animFrames delay:0.2f];
+                         animationWithSpriteFrames:animFrames delay:0.2f];
      return [CCRepeatForever actionWithAction:
-              [CCAnimate actionWithAnimation:anim restoreOriginalFrame:NO]];
+              [CCAnimate actionWithAnimation:anim]];
 
 }
 +(void)initSpriteSheet:(CCNode*)layer texture:(CCTexture2D*) texture{

@@ -177,11 +177,11 @@ enum{
                            nil];
     //4)创建动画对象
     CCAnimation *upAnim = [CCAnimation
-                           animationWithFrames:upAnimFrames delay:0.2f];
+                           animationWithSpriteFrames:upAnimFrames delay:0.2f];
     [birdSprite runAction: [CCRepeatForever actionWithAction:
-                            [CCAnimate actionWithAnimation:upAnim restoreOriginalFrame:NO]]];
+                            [CCAnimate actionWithAnimation:upAnim]]];
     
-    CCParticleSystem *particles = [ARCH_OPTIMAL_PARTICLE_SYSTEM particleWithFile:@"winstart.plist"];
+    CCParticleSystem *particles = [CCParticleSystemQuad particleWithFile:@"winstart.plist"];
     [particles setPosition:ccp(birdSprite.position.x, birdSprite.position.y- 200 )];
     [self addChild:particles z:1 tag:tParticle];
     [self performSelector:@selector(stopParitcle:) withObject:particles afterDelay:3] ;

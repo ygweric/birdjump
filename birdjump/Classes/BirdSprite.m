@@ -52,9 +52,9 @@ typedef struct{
                            nil];
     //4)创建动画对象
     CCAnimation *upAnim = [CCAnimation
-                           animationWithFrames:upAnimFrames delay:0.2f];
+                           animationWithSpriteFrames:upAnimFrames delay:0.2f];
     bird.upAction = [CCRepeatForever actionWithAction:
-                     [CCAnimate actionWithAnimation:upAnim restoreOriginalFrame:NO]];
+                     [CCAnimate actionWithAnimation:upAnim]];
     NSArray* downAnimFrames=[NSArray arrayWithObjects:
                              [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"player01_fall_0010.png"],
                              [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"player01_fall_0011.png"],
@@ -62,9 +62,9 @@ typedef struct{
                              nil];
     //4)创建动画对象
     CCAnimation *downAnim = [CCAnimation
-                             animationWithFrames:downAnimFrames delay:0.2f];
+                             animationWithSpriteFrames:downAnimFrames delay:0.2f];
     bird.downAction = [CCRepeatForever actionWithAction:
-                       [CCAnimate actionWithAnimation:downAnim restoreOriginalFrame:NO]];
+                       [CCAnimate actionWithAnimation:downAnim ]];
     //-------创建动画 ---END
     
     [bird runAction:bird.downAction];
@@ -93,7 +93,7 @@ typedef struct{
 
 - (void) birdEmitterInit
 { 
-    trick_particles = [ARCH_OPTIMAL_PARTICLE_SYSTEM particleWithFile:@"particle_trick.plist"];
+    trick_particles = [CCParticleSystemQuad particleWithFile:@"particle_trick.plist"];
     [self.layer.gameWorld addChild:trick_particles z:zBonusParticle];    
     [trick_particles stopSystem];
     
@@ -259,7 +259,7 @@ typedef struct{
                 //tBlockBreak,撞碎block，速度不减
                 if (maxTouchGid==tBlockBreak) {
                     
-                    CCParticleSystem *particles = [ARCH_OPTIMAL_PARTICLE_SYSTEM particleWithFile:@"break_particle3.plist"];
+                    CCParticleSystem *particles = [CCParticleSystemQuad particleWithFile:@"break_particle3.plist"];
                     [particles setPosition:ccp(self.position.x, self.position.y+ self.textureRect.size.height )];
                     [ly.gameWorld addChild:particles];
                     
@@ -327,7 +327,7 @@ typedef struct{
                      emi.startColor=cStart;
                      //                emi.startColor= _ccColor4F {0.2,0.2,0.2,0.2};
                      */
-                    CCParticleSystem *particles = [ARCH_OPTIMAL_PARTICLE_SYSTEM particleWithFile:@"break_particle3.plist"];
+                    CCParticleSystem *particles = [CCParticleSystemQuad particleWithFile:@"break_particle3.plist"];
                     [particles setPosition:ccp(self.position.x, self.position.y- self.textureRect.size.height )];
                     [ly.gameWorld addChild:particles];
                     
@@ -382,7 +382,7 @@ typedef struct{
                 maxTouchGid=ti.tid;
                 //tBlockBreak,撞碎block，速度不减
                 if (maxTouchGid==tBlockBreak) {
-                    CCParticleSystem *particles = [ARCH_OPTIMAL_PARTICLE_SYSTEM particleWithFile:@"break_particle3.plist"];
+                    CCParticleSystem *particles = [CCParticleSystemQuad particleWithFile:@"break_particle3.plist"];
                     [particles setPosition:ccp(self.position.x, self.position.y- self.textureRect.size.height )];
                     [ly.gameWorld addChild:particles];
                     
@@ -431,7 +431,7 @@ typedef struct{
                 touchScore=[self getBonusScore:ti.tid]/2;
                 //tBlockBreak,撞碎block，速度不减
                 if (maxTouchGid==tBlockBreak) {
-                    CCParticleSystem *particles = [ARCH_OPTIMAL_PARTICLE_SYSTEM particleWithFile:@"break_particle3.plist"];
+                    CCParticleSystem *particles = [CCParticleSystemQuad particleWithFile:@"break_particle3.plist"];
                     [particles setPosition:ccp(self.position.x, self.position.y- self.textureRect.size.height )];
                     [ly.gameWorld addChild:particles];
                     
