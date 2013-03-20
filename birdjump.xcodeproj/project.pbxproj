@@ -25,12 +25,8 @@
 		04185F831660962500F0EFE2 /* lose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04185F821660962500F0EFE2 /* lose.mp3 */; };
 		04185F8616609EE600F0EFE2 /* gamescorescreen_score_count_loop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 04185F8516609EE600F0EFE2 /* gamescorescreen_score_count_loop.wav */; };
 		04185F881660BB6F00F0EFE2 /* cheer.wav in Resources */ = {isa = PBXBuildFile; fileRef = 04185F871660BB6F00F0EFE2 /* cheer.wav */; };
-		041F379F164BE86500E59BB3 /* BonusSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 041F379E164BE86500E59BB3 /* BonusSprite.m */; };
-		041FFE25165CFF8D003413D7 /* WinLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 041FFE24165CFF8D003413D7 /* WinLayer.m */; };
-		041FFE29165D09C8003413D7 /* LoseLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 041FFE28165D09C8003413D7 /* LoseLayer.m */; };
 		041FFE2D165D1C3D003413D7 /* birdjump1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 041FFE2B165D1C3D003413D7 /* birdjump1.tmx */; };
 		041FFE2E165D1C3D003413D7 /* birdjump2.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 041FFE2C165D1C3D003413D7 /* birdjump2.tmx */; };
-		041FFE3A165D28A2003413D7 /* SlidingMenuGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 041FFE39165D28A2003413D7 /* SlidingMenuGrid.m */; };
 		041FFE3C165D2B95003413D7 /* menu_item_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 041FFE3B165D2B95003413D7 /* menu_item_bg.png */; };
 		041FFE40165D2F2F003413D7 /* birdjump3.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 041FFE3F165D2F2F003413D7 /* birdjump3.tmx */; };
 		0421D47A166CC99A00299E08 /* bg-568h@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0421D479166CC99A00299E08 /* bg-568h@2x.jpg */; };
@@ -49,7 +45,6 @@
 		0421D4A4166D0B5E00299E08 /* birdjump11-ipad.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 0421D49E166D0B5E00299E08 /* birdjump11-ipad.tmx */; };
 		0421D4A5166D0B5E00299E08 /* birdjump12-ipad.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 0421D49F166D0B5E00299E08 /* birdjump12-ipad.tmx */; };
 		0421D4A6166D0B5E00299E08 /* birdjump13-ipad.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 0421D4A0166D0B5E00299E08 /* birdjump13-ipad.tmx */; };
-		0421D4A9166D0BDB00299E08 /* HelpLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0421D4A8166D0BDB00299E08 /* HelpLayer.m */; };
 		0421D4AB166D0E5A00299E08 /* help in Resources */ = {isa = PBXBuildFile; fileRef = 0421D4AA166D0E5A00299E08 /* help */; };
 		04245A961663C3BD0015EEF3 /* button_sheet.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04245A941663C3BC0015EEF3 /* button_sheet.plist */; };
 		04245A971663C3BD0015EEF3 /* button_sheet.png in Resources */ = {isa = PBXBuildFile; fileRef = 04245A951663C3BC0015EEF3 /* button_sheet.png */; };
@@ -75,7 +70,6 @@
 		042F27AE166BB08F0007BA68 /* logo-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 042F27AD166BB08F0007BA68 /* logo-ipad.png */; };
 		042F27B0166BB0970007BA68 /* logo-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 042F27AF166BB0970007BA68 /* logo-ipad.png */; };
 		04348ACE16606B500063AAAD /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04348ACD16606B500063AAAD /* bg.jpg */; };
-		04348AD216606D110063AAAD /* MyCustomLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04348AD116606D110063AAAD /* MyCustomLayer.m */; };
 		043F53AE1657987800A80A7D /* bump.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 043F53AD1657987800A80A7D /* bump.mp3 */; };
 		043F53B01657A73C00A80A7D /* gamewin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 043F53AF1657A73C00A80A7D /* gamewin.wav */; };
 		044A7B3B1664EFCB00DF4BF6 /* level_lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 044A7B3A1664EFCB00DF4BF6 /* level_lock.png */; };
@@ -84,11 +78,6 @@
 		044A7B4316650BBD00DF4BF6 /* birdjump6.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 044A7B4016650BBD00DF4BF6 /* birdjump6.tmx */; };
 		044A7B4416650BBD00DF4BF6 /* birdjump7.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 044A7B4116650BBD00DF4BF6 /* birdjump7.tmx */; };
 		04581DB9167610CA00DC85E8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04581DB8167610CA00DC85E8 /* StoreKit.framework */; };
-		046601861660D3920018C25A /* MyCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 046601831660D3920018C25A /* MyCustomButton.m */; };
-		046601871660D3920018C25A /* MyCustomButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 046601851660D3920018C25A /* MyCustomButtonItem.m */; };
-		04827359165BB3700082776D /* MenuLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04827358165BB3700082776D /* MenuLayer.m */; };
-		0482735F165BB7F10082776D /* SettingLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482735E165BB7F10082776D /* SettingLayer.m */; };
-		04827363165BD46D0082776D /* SysConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 04827362165BD46D0082776D /* SysConfig.m */; };
 		0482BDAA16F9F85900796A83 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482BDA916F9F85900796A83 /* HelloWorldLayer.m */; };
 		0482BE9F16F9F89900796A83 /* CCAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482BDAE16F9F89800796A83 /* CCAction.m */; };
 		0482BEA016F9F89900796A83 /* CCActionCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482BDB016F9F89800796A83 /* CCActionCamera.m */; };
@@ -196,14 +185,26 @@
 		0482BF0616F9F89900796A83 /* LICENSE_CocosDenshion.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0482BE9D16F9F89900796A83 /* LICENSE_CocosDenshion.txt */; };
 		0482BF0716F9F89900796A83 /* LICENSE_Kazmath.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0482BE9E16F9F89900796A83 /* LICENSE_Kazmath.txt */; };
 		0482BF0A16FA062700796A83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482BF0916FA062700796A83 /* AppDelegate.m */; };
-		049901661645620C0083DFA5 /* PlaySoundUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 049901651645620C0083DFA5 /* PlaySoundUtil.m */; };
 		04A673E21661328100525A70 /* button_select.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04A673E11661328100525A70 /* button_select.mp3 */; };
 		04CFCD32164ACF690071FA19 /* character.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04CFCD30164ACF690071FA19 /* character.plist */; };
 		04CFCD33164ACF690071FA19 /* character.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CFCD31164ACF690071FA19 /* character.png */; };
-		04D0E9D616551B0800D9EFB6 /* CustomParticleExplosion.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D0E9D516551B0800D9EFB6 /* CustomParticleExplosion.m */; };
 		04D0E9E016555D6200D9EFB6 /* layer_award.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04D0E9DE16555D6200D9EFB6 /* layer_award.plist */; };
 		04D0E9E116555D6200D9EFB6 /* layer_award.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D0E9DF16555D6200D9EFB6 /* layer_award.png */; };
-		04E1553B16469D3300D968EF /* BirdSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E1553A16469D3300D968EF /* BirdSprite.m */; };
+		04D152BC16FA13DD0025BCEC /* AudioUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152B416FA13DD0025BCEC /* AudioUtil.m */; };
+		04D152BD16FA13DD0025BCEC /* DialogUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152B916FA13DD0025BCEC /* DialogUtil.m */; };
+		04D152BE16FA13DD0025BCEC /* SysConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152BB16FA13DD0025BCEC /* SysConfig.m */; };
+		04D152C816FA14100025BCEC /* MyCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152C116FA14100025BCEC /* MyCustomButton.m */; };
+		04D152C916FA14100025BCEC /* MyCustomButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152C316FA14100025BCEC /* MyCustomButtonItem.m */; };
+		04D152CB16FA14100025BCEC /* SlidingMenuGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152C716FA14100025BCEC /* SlidingMenuGrid.m */; };
+		04D152D116FA14390025BCEC /* BirdSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152CE16FA14390025BCEC /* BirdSprite.m */; };
+		04D152D216FA14390025BCEC /* BonusSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152D016FA14390025BCEC /* BonusSprite.m */; };
+		04D152E016FA14670025BCEC /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152D516FA14670025BCEC /* GameLayer.m */; };
+		04D152E116FA14670025BCEC /* HelpLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152D716FA14670025BCEC /* HelpLayer.m */; };
+		04D152E216FA14670025BCEC /* LoseLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152D916FA14670025BCEC /* LoseLayer.m */; };
+		04D152E316FA14670025BCEC /* MenuLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152DB16FA14670025BCEC /* MenuLayer.m */; };
+		04D152E416FA14670025BCEC /* SettingLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152DD16FA14670025BCEC /* SettingLayer.m */; };
+		04D152E516FA14670025BCEC /* WinLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152DF16FA14670025BCEC /* WinLayer.m */; };
+		04D152EB16FA16680025BCEC /* MyBaseLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152EA16FA16670025BCEC /* MyBaseLayer.m */; };
 		04E20D8E164C2978003EA611 /* boostloop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04E20D8B164C2978003EA611 /* boostloop.mp3 */; };
 		04E20D8F164C2978003EA611 /* coin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 04E20D8C164C2978003EA611 /* coin.wav */; };
 		04E20D92164C2AC4003EA611 /* jump.wav in Resources */ = {isa = PBXBuildFile; fileRef = 04E20D91164C2AC4003EA611 /* jump.wav */; };
@@ -218,7 +219,6 @@
 		F49E736A15ACCF46009C8E84 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49E736915ACCF46009C8E84 /* CoreGraphics.framework */; };
 		F49E737015ACCF46009C8E84 /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = F49E736F15ACCF46009C8E84 /* fps_images.png */; };
 		F49E74BC15ACCF4A009C8E84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F49E74BB15ACCF4A009C8E84 /* main.m */; };
-		F4D0CBD415ACD01C007C74DF /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D0CBCF15ACD01C007C74DF /* GameLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -230,7 +230,6 @@
 		040BB4A31666555F009C7954 /* bg-ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg-ipad.jpg"; sourceTree = "<group>"; };
 		040BB4A61666555F009C7954 /* level_lock-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "level_lock-ipad.png"; sourceTree = "<group>"; };
 		040BB4A71666555F009C7954 /* menu_item_bg-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_item_bg-ipad.png"; sourceTree = "<group>"; };
-		040BB4AD166655A0009C7954 /* DeviceSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DeviceSettings.h; path = Classes/DeviceSettings.h; sourceTree = "<group>"; };
 		040BB4B216666F09009C7954 /* birdjump2-ipad.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "birdjump2-ipad.tmx"; path = "Resources/Images/birdjump2-ipad.tmx"; sourceTree = "<group>"; };
 		040BB4B416666F2A009C7954 /* layer_award-ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "layer_award-ipad.plist"; sourceTree = "<group>"; };
 		040BB4B516666F2A009C7954 /* layer_award-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "layer_award-ipad.png"; sourceTree = "<group>"; };
@@ -242,16 +241,8 @@
 		04185F821660962500F0EFE2 /* lose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = lose.mp3; path = Resources/music/lose.mp3; sourceTree = "<group>"; };
 		04185F8516609EE600F0EFE2 /* gamescorescreen_score_count_loop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = gamescorescreen_score_count_loop.wav; path = Resources/music/gamescorescreen_score_count_loop.wav; sourceTree = "<group>"; };
 		04185F871660BB6F00F0EFE2 /* cheer.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = cheer.wav; path = Resources/music/cheer.wav; sourceTree = "<group>"; };
-		041F379D164BE86500E59BB3 /* BonusSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BonusSprite.h; sourceTree = "<group>"; };
-		041F379E164BE86500E59BB3 /* BonusSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BonusSprite.m; sourceTree = "<group>"; };
-		041FFE23165CFF8D003413D7 /* WinLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinLayer.h; sourceTree = "<group>"; };
-		041FFE24165CFF8D003413D7 /* WinLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinLayer.m; sourceTree = "<group>"; };
-		041FFE27165D09C8003413D7 /* LoseLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoseLayer.h; sourceTree = "<group>"; };
-		041FFE28165D09C8003413D7 /* LoseLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoseLayer.m; sourceTree = "<group>"; };
 		041FFE2B165D1C3D003413D7 /* birdjump1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = birdjump1.tmx; path = Resources/Images/birdjump1.tmx; sourceTree = "<group>"; };
 		041FFE2C165D1C3D003413D7 /* birdjump2.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = birdjump2.tmx; path = Resources/Images/birdjump2.tmx; sourceTree = "<group>"; };
-		041FFE38165D28A1003413D7 /* SlidingMenuGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SlidingMenuGrid.h; path = Classes/SlidingMenuGrid.h; sourceTree = "<group>"; };
-		041FFE39165D28A2003413D7 /* SlidingMenuGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SlidingMenuGrid.m; path = Classes/SlidingMenuGrid.m; sourceTree = "<group>"; };
 		041FFE3B165D2B95003413D7 /* menu_item_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_item_bg.png; sourceTree = "<group>"; };
 		041FFE3F165D2F2F003413D7 /* birdjump3.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = birdjump3.tmx; path = Resources/Images/birdjump3.tmx; sourceTree = "<group>"; };
 		0421D479166CC99A00299E08 /* bg-568h@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg-568h@2x.jpg"; sourceTree = "<group>"; };
@@ -270,15 +261,12 @@
 		0421D49E166D0B5E00299E08 /* birdjump11-ipad.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "birdjump11-ipad.tmx"; path = "Resources/Images/birdjump11-ipad.tmx"; sourceTree = "<group>"; };
 		0421D49F166D0B5E00299E08 /* birdjump12-ipad.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "birdjump12-ipad.tmx"; path = "Resources/Images/birdjump12-ipad.tmx"; sourceTree = "<group>"; };
 		0421D4A0166D0B5E00299E08 /* birdjump13-ipad.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "birdjump13-ipad.tmx"; path = "Resources/Images/birdjump13-ipad.tmx"; sourceTree = "<group>"; };
-		0421D4A7166D0BDB00299E08 /* HelpLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpLayer.h; sourceTree = "<group>"; };
-		0421D4A8166D0BDB00299E08 /* HelpLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpLayer.m; sourceTree = "<group>"; };
 		0421D4AA166D0E5A00299E08 /* help */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = help; sourceTree = "<group>"; };
 		04245A941663C3BC0015EEF3 /* button_sheet.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = button_sheet.plist; sourceTree = "<group>"; };
 		04245A951663C3BC0015EEF3 /* button_sheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_sheet.png; sourceTree = "<group>"; };
 		0427A2C216620D03003A5268 /* gamebg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = gamebg.mp3; path = Resources/music/gamebg.mp3; sourceTree = "<group>"; };
 		0427A2C416620D34003A5268 /* block_break.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = block_break.mp3; path = Resources/music/block_break.mp3; sourceTree = "<group>"; };
 		0427A2D116624EDF003A5268 /* winstart.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = winstart.plist; sourceTree = "<group>"; };
-		0427B52716515F080020EF52 /* CUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUtil.h; sourceTree = "<group>"; };
 		042CD8971667861E0040CE6A /* birdjump3-ipad.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "birdjump3-ipad.tmx"; path = "Resources/Images/birdjump3-ipad.tmx"; sourceTree = "<group>"; };
 		042CD8981667861E0040CE6A /* birdjump4-ipad.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "birdjump4-ipad.tmx"; path = "Resources/Images/birdjump4-ipad.tmx"; sourceTree = "<group>"; };
 		042CD8991667861E0040CE6A /* birdjump5-ipad.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "birdjump5-ipad.tmx"; path = "Resources/Images/birdjump5-ipad.tmx"; sourceTree = "<group>"; };
@@ -298,8 +286,6 @@
 		042F27AD166BB08F0007BA68 /* logo-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo-ipad.png"; path = "birdjump/Resources/logo-ipad.png"; sourceTree = SOURCE_ROOT; };
 		042F27AF166BB0970007BA68 /* logo-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo-ipad.png"; path = "../logo-ipad.png"; sourceTree = "<group>"; };
 		04348ACD16606B500063AAAD /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
-		04348AD016606D110063AAAD /* MyCustomLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyCustomLayer.h; path = Classes/MyCustomLayer.h; sourceTree = "<group>"; };
-		04348AD116606D110063AAAD /* MyCustomLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyCustomLayer.m; path = Classes/MyCustomLayer.m; sourceTree = "<group>"; };
 		043F53AD1657987800A80A7D /* bump.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bump.mp3; path = Resources/music/bump.mp3; sourceTree = "<group>"; };
 		043F53AF1657A73C00A80A7D /* gamewin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = gamewin.wav; path = Resources/music/gamewin.wav; sourceTree = "<group>"; };
 		044A7B3A1664EFCB00DF4BF6 /* level_lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level_lock.png; sourceTree = "<group>"; };
@@ -308,16 +294,6 @@
 		044A7B4016650BBD00DF4BF6 /* birdjump6.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = birdjump6.tmx; path = Resources/Images/birdjump6.tmx; sourceTree = "<group>"; };
 		044A7B4116650BBD00DF4BF6 /* birdjump7.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = birdjump7.tmx; path = Resources/Images/birdjump7.tmx; sourceTree = "<group>"; };
 		04581DB8167610CA00DC85E8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		046601821660D3920018C25A /* MyCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyCustomButton.h; path = Classes/MyCustomButton.h; sourceTree = "<group>"; };
-		046601831660D3920018C25A /* MyCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyCustomButton.m; path = Classes/MyCustomButton.m; sourceTree = "<group>"; };
-		046601841660D3920018C25A /* MyCustomButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyCustomButtonItem.h; path = Classes/MyCustomButtonItem.h; sourceTree = "<group>"; };
-		046601851660D3920018C25A /* MyCustomButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyCustomButtonItem.m; path = Classes/MyCustomButtonItem.m; sourceTree = "<group>"; };
-		04827357165BB36F0082776D /* MenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuLayer.h; sourceTree = "<group>"; };
-		04827358165BB3700082776D /* MenuLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuLayer.m; sourceTree = "<group>"; };
-		0482735E165BB7F10082776D /* SettingLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingLayer.m; sourceTree = "<group>"; };
-		04827360165BBDBD0082776D /* SettingLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingLayer.h; sourceTree = "<group>"; };
-		04827361165BD46D0082776D /* SysConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SysConfig.h; path = Classes/SysConfig.h; sourceTree = "<group>"; };
-		04827362165BD46D0082776D /* SysConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SysConfig.m; path = Classes/SysConfig.m; sourceTree = "<group>"; };
 		0482BDA816F9F85900796A83 /* HelloWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
 		0482BDA916F9F85900796A83 /* HelloWorldLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		0482BDAD16F9F89800796A83 /* CCAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAction.h; sourceTree = "<group>"; };
@@ -553,19 +529,44 @@
 		0482BE9E16F9F89900796A83 /* LICENSE_Kazmath.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_Kazmath.txt; sourceTree = "<group>"; };
 		0482BF0816FA062700796A83 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0482BF0916FA062700796A83 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		049901641645620C0083DFA5 /* PlaySoundUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlaySoundUtil.h; path = util/PlaySoundUtil.h; sourceTree = "<group>"; };
-		049901651645620C0083DFA5 /* PlaySoundUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlaySoundUtil.m; path = util/PlaySoundUtil.m; sourceTree = "<group>"; };
 		04A673E11661328100525A70 /* button_select.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = button_select.mp3; path = Resources/music/button_select.mp3; sourceTree = "<group>"; };
 		04CFCD30164ACF690071FA19 /* character.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = character.plist; sourceTree = "<group>"; };
 		04CFCD31164ACF690071FA19 /* character.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = character.png; sourceTree = "<group>"; };
-		04D0E9D416551B0800D9EFB6 /* CustomParticleExplosion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomParticleExplosion.h; path = Classes/CustomParticleExplosion.h; sourceTree = "<group>"; };
-		04D0E9D516551B0800D9EFB6 /* CustomParticleExplosion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomParticleExplosion.m; path = Classes/CustomParticleExplosion.m; sourceTree = "<group>"; };
-		04D0E9D716551B3F00D9EFB6 /* CustomParticleHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CustomParticleHeader.h; path = Classes/CustomParticleHeader.h; sourceTree = "<group>"; };
 		04D0E9DE16555D6200D9EFB6 /* layer_award.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = layer_award.plist; sourceTree = "<group>"; };
 		04D0E9DF16555D6200D9EFB6 /* layer_award.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = layer_award.png; sourceTree = "<group>"; };
-		04DE6D0F164E6CF700E8828B /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		04E1553916469D3300D968EF /* BirdSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BirdSprite.h; sourceTree = "<group>"; };
-		04E1553A16469D3300D968EF /* BirdSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirdSprite.m; sourceTree = "<group>"; };
+		04D152B316FA13DD0025BCEC /* AudioUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioUtil.h; sourceTree = "<group>"; };
+		04D152B416FA13DD0025BCEC /* AudioUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioUtil.m; sourceTree = "<group>"; };
+		04D152B516FA13DD0025BCEC /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		04D152B616FA13DD0025BCEC /* CUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUtil.h; sourceTree = "<group>"; };
+		04D152B716FA13DD0025BCEC /* DeviceSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceSettings.h; sourceTree = "<group>"; };
+		04D152B816FA13DD0025BCEC /* DialogUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialogUtil.h; sourceTree = "<group>"; };
+		04D152B916FA13DD0025BCEC /* DialogUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialogUtil.m; sourceTree = "<group>"; };
+		04D152BA16FA13DD0025BCEC /* SysConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SysConfig.h; sourceTree = "<group>"; };
+		04D152BB16FA13DD0025BCEC /* SysConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SysConfig.m; sourceTree = "<group>"; };
+		04D152C016FA14100025BCEC /* MyCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomButton.h; sourceTree = "<group>"; };
+		04D152C116FA14100025BCEC /* MyCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomButton.m; sourceTree = "<group>"; };
+		04D152C216FA14100025BCEC /* MyCustomButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomButtonItem.h; sourceTree = "<group>"; };
+		04D152C316FA14100025BCEC /* MyCustomButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomButtonItem.m; sourceTree = "<group>"; };
+		04D152C616FA14100025BCEC /* SlidingMenuGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlidingMenuGrid.h; sourceTree = "<group>"; };
+		04D152C716FA14100025BCEC /* SlidingMenuGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlidingMenuGrid.m; sourceTree = "<group>"; };
+		04D152CD16FA14390025BCEC /* BirdSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BirdSprite.h; sourceTree = "<group>"; };
+		04D152CE16FA14390025BCEC /* BirdSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirdSprite.m; sourceTree = "<group>"; };
+		04D152CF16FA14390025BCEC /* BonusSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BonusSprite.h; sourceTree = "<group>"; };
+		04D152D016FA14390025BCEC /* BonusSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BonusSprite.m; sourceTree = "<group>"; };
+		04D152D416FA14670025BCEC /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
+		04D152D516FA14670025BCEC /* GameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLayer.m; sourceTree = "<group>"; };
+		04D152D616FA14670025BCEC /* HelpLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpLayer.h; sourceTree = "<group>"; };
+		04D152D716FA14670025BCEC /* HelpLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpLayer.m; sourceTree = "<group>"; };
+		04D152D816FA14670025BCEC /* LoseLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoseLayer.h; sourceTree = "<group>"; };
+		04D152D916FA14670025BCEC /* LoseLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoseLayer.m; sourceTree = "<group>"; };
+		04D152DA16FA14670025BCEC /* MenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuLayer.h; sourceTree = "<group>"; };
+		04D152DB16FA14670025BCEC /* MenuLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuLayer.m; sourceTree = "<group>"; };
+		04D152DC16FA14670025BCEC /* SettingLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingLayer.h; sourceTree = "<group>"; };
+		04D152DD16FA14670025BCEC /* SettingLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingLayer.m; sourceTree = "<group>"; };
+		04D152DE16FA14670025BCEC /* WinLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinLayer.h; sourceTree = "<group>"; };
+		04D152DF16FA14670025BCEC /* WinLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinLayer.m; sourceTree = "<group>"; };
+		04D152E916FA16670025BCEC /* MyBaseLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBaseLayer.h; sourceTree = "<group>"; };
+		04D152EA16FA16670025BCEC /* MyBaseLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBaseLayer.m; sourceTree = "<group>"; };
 		04E20D8B164C2978003EA611 /* boostloop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = boostloop.mp3; path = Resources/music/boostloop.mp3; sourceTree = "<group>"; };
 		04E20D8C164C2978003EA611 /* coin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = coin.wav; path = Resources/music/coin.wav; sourceTree = "<group>"; };
 		04E20D91164C2AC4003EA611 /* jump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = jump.wav; path = Resources/music/jump.wav; sourceTree = "<group>"; };
@@ -584,9 +585,6 @@
 		F49E737D15ACCF47009C8E84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
 		F49E74BA15ACCF4A009C8E84 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		F49E74BB15ACCF4A009C8E84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F49E74C615ACCF4A009C8E84 /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
-		F4D0CBCE15ACD01C007C74DF /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
-		F4D0CBCF15ACD01C007C74DF /* GameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -610,18 +608,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		041F37A1164BE86C00E59BB3 /* sprite */ = {
-			isa = PBXGroup;
-			children = (
-				04E1553916469D3300D968EF /* BirdSprite.h */,
-				04E1553A16469D3300D968EF /* BirdSprite.m */,
-				041F379D164BE86500E59BB3 /* BonusSprite.h */,
-				041F379E164BE86500E59BB3 /* BonusSprite.m */,
-			);
-			name = sprite;
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		0427A2D016624ECA003A5268 /* map */ = {
 			isa = PBXGroup;
 			children = (
@@ -653,21 +639,6 @@
 				0421D48B166D07FE00299E08 /* birdjump9.tmx */,
 			);
 			name = map;
-			sourceTree = "<group>";
-		};
-		046601781660C7910018C25A /* customview */ = {
-			isa = PBXGroup;
-			children = (
-				04348AD016606D110063AAAD /* MyCustomLayer.h */,
-				04348AD116606D110063AAAD /* MyCustomLayer.m */,
-				046601821660D3920018C25A /* MyCustomButton.h */,
-				046601831660D3920018C25A /* MyCustomButton.m */,
-				046601841660D3920018C25A /* MyCustomButtonItem.h */,
-				046601851660D3920018C25A /* MyCustomButtonItem.m */,
-				041FFE38165D28A1003413D7 /* SlidingMenuGrid.h */,
-				041FFE39165D28A2003413D7 /* SlidingMenuGrid.m */,
-			);
-			name = customview;
 			sourceTree = "<group>";
 		};
 		0482BDAB16F9F89800796A83 /* libs */ = {
@@ -1004,21 +975,6 @@
 			path = GL;
 			sourceTree = "<group>";
 		};
-		04990162164561F30083DFA5 /* util */ = {
-			isa = PBXGroup;
-			children = (
-				F49E74C615ACCF4A009C8E84 /* GameConfig.h */,
-				04DE6D0F164E6CF700E8828B /* Constants.h */,
-				0427B52716515F080020EF52 /* CUtil.h */,
-				049901641645620C0083DFA5 /* PlaySoundUtil.h */,
-				049901651645620C0083DFA5 /* PlaySoundUtil.m */,
-				04827361165BD46D0082776D /* SysConfig.h */,
-				04827362165BD46D0082776D /* SysConfig.m */,
-				040BB4AD166655A0009C7954 /* DeviceSettings.h */,
-			);
-			name = util;
-			sourceTree = "<group>";
-		};
 		04990167164564C70083DFA5 /* music */ = {
 			isa = PBXGroup;
 			children = (
@@ -1040,14 +996,69 @@
 			name = music;
 			sourceTree = "<group>";
 		};
-		04D0E9D2165519B500D9EFB6 /* particle */ = {
+		04D152B216FA13DD0025BCEC /* util */ = {
 			isa = PBXGroup;
 			children = (
-				04D0E9D716551B3F00D9EFB6 /* CustomParticleHeader.h */,
-				04D0E9D416551B0800D9EFB6 /* CustomParticleExplosion.h */,
-				04D0E9D516551B0800D9EFB6 /* CustomParticleExplosion.m */,
+				04D152B316FA13DD0025BCEC /* AudioUtil.h */,
+				04D152B416FA13DD0025BCEC /* AudioUtil.m */,
+				04D152B516FA13DD0025BCEC /* Constants.h */,
+				04D152B616FA13DD0025BCEC /* CUtil.h */,
+				04D152B716FA13DD0025BCEC /* DeviceSettings.h */,
+				04D152B816FA13DD0025BCEC /* DialogUtil.h */,
+				04D152B916FA13DD0025BCEC /* DialogUtil.m */,
+				04D152BA16FA13DD0025BCEC /* SysConfig.h */,
+				04D152BB16FA13DD0025BCEC /* SysConfig.m */,
 			);
-			name = particle;
+			name = util;
+			path = Classes/util;
+			sourceTree = "<group>";
+		};
+		04D152BF16FA14100025BCEC /* customview */ = {
+			isa = PBXGroup;
+			children = (
+				04D152C016FA14100025BCEC /* MyCustomButton.h */,
+				04D152C116FA14100025BCEC /* MyCustomButton.m */,
+				04D152C216FA14100025BCEC /* MyCustomButtonItem.h */,
+				04D152C316FA14100025BCEC /* MyCustomButtonItem.m */,
+				04D152C616FA14100025BCEC /* SlidingMenuGrid.h */,
+				04D152C716FA14100025BCEC /* SlidingMenuGrid.m */,
+				04D152E916FA16670025BCEC /* MyBaseLayer.h */,
+				04D152EA16FA16670025BCEC /* MyBaseLayer.m */,
+			);
+			name = customview;
+			path = Classes/customview;
+			sourceTree = "<group>";
+		};
+		04D152CC16FA14380025BCEC /* sprite */ = {
+			isa = PBXGroup;
+			children = (
+				04D152CD16FA14390025BCEC /* BirdSprite.h */,
+				04D152CE16FA14390025BCEC /* BirdSprite.m */,
+				04D152CF16FA14390025BCEC /* BonusSprite.h */,
+				04D152D016FA14390025BCEC /* BonusSprite.m */,
+			);
+			name = sprite;
+			path = Classes/sprite;
+			sourceTree = "<group>";
+		};
+		04D152D316FA14670025BCEC /* scene */ = {
+			isa = PBXGroup;
+			children = (
+				04D152D416FA14670025BCEC /* GameLayer.h */,
+				04D152D516FA14670025BCEC /* GameLayer.m */,
+				04D152D616FA14670025BCEC /* HelpLayer.h */,
+				04D152D716FA14670025BCEC /* HelpLayer.m */,
+				04D152D816FA14670025BCEC /* LoseLayer.h */,
+				04D152D916FA14670025BCEC /* LoseLayer.m */,
+				04D152DA16FA14670025BCEC /* MenuLayer.h */,
+				04D152DB16FA14670025BCEC /* MenuLayer.m */,
+				04D152DC16FA14670025BCEC /* SettingLayer.h */,
+				04D152DD16FA14670025BCEC /* SettingLayer.m */,
+				04D152DE16FA14670025BCEC /* WinLayer.h */,
+				04D152DF16FA14670025BCEC /* WinLayer.m */,
+			);
+			name = scene;
+			path = Classes/scene;
 			sourceTree = "<group>";
 		};
 		04DE6D0A164E4BAD00E8828B /* mainview */ = {
@@ -1100,12 +1111,11 @@
 			isa = PBXGroup;
 			children = (
 				04DE6D0A164E4BAD00E8828B /* mainview */,
-				04D0E9D2165519B500D9EFB6 /* particle */,
-				046601781660C7910018C25A /* customview */,
-				04990162164561F30083DFA5 /* util */,
-				041F37A1164BE86C00E59BB3 /* sprite */,
-				F4D0CBCD15ACD01C007C74DF /* layergame */,
+				04D152BF16FA14100025BCEC /* customview */,
+				04D152B216FA13DD0025BCEC /* util */,
+				04D152CC16FA14380025BCEC /* sprite */,
 				0482BDAB16F9F89800796A83 /* libs */,
+				04D152D316FA14670025BCEC /* scene */,
 				F49E736C15ACCF46009C8E84 /* resources */,
 				F49E74B915ACCF4A009C8E84 /* Supporting Files */,
 			);
@@ -1137,26 +1147,6 @@
 				F49E74BB15ACCF4A009C8E84 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F4D0CBCD15ACD01C007C74DF /* layergame */ = {
-			isa = PBXGroup;
-			children = (
-				F4D0CBCE15ACD01C007C74DF /* GameLayer.h */,
-				F4D0CBCF15ACD01C007C74DF /* GameLayer.m */,
-				041FFE27165D09C8003413D7 /* LoseLayer.h */,
-				041FFE28165D09C8003413D7 /* LoseLayer.m */,
-				04827357165BB36F0082776D /* MenuLayer.h */,
-				04827358165BB3700082776D /* MenuLayer.m */,
-				04827360165BBDBD0082776D /* SettingLayer.h */,
-				0482735E165BB7F10082776D /* SettingLayer.m */,
-				041FFE23165CFF8D003413D7 /* WinLayer.h */,
-				041FFE24165CFF8D003413D7 /* WinLayer.m */,
-				0421D4A7166D0BDB00299E08 /* HelpLayer.h */,
-				0421D4A8166D0BDB00299E08 /* HelpLayer.m */,
-			);
-			name = layergame;
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		F4D0CBD815ACD027007C74DF /* Fonts */ = {
@@ -1372,21 +1362,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F49E74BC15ACCF4A009C8E84 /* main.m in Sources */,
-				F4D0CBD415ACD01C007C74DF /* GameLayer.m in Sources */,
-				049901661645620C0083DFA5 /* PlaySoundUtil.m in Sources */,
-				04E1553B16469D3300D968EF /* BirdSprite.m in Sources */,
-				041F379F164BE86500E59BB3 /* BonusSprite.m in Sources */,
-				04D0E9D616551B0800D9EFB6 /* CustomParticleExplosion.m in Sources */,
-				04827359165BB3700082776D /* MenuLayer.m in Sources */,
-				0482735F165BB7F10082776D /* SettingLayer.m in Sources */,
-				04827363165BD46D0082776D /* SysConfig.m in Sources */,
-				041FFE25165CFF8D003413D7 /* WinLayer.m in Sources */,
-				041FFE29165D09C8003413D7 /* LoseLayer.m in Sources */,
-				041FFE3A165D28A2003413D7 /* SlidingMenuGrid.m in Sources */,
-				04348AD216606D110063AAAD /* MyCustomLayer.m in Sources */,
-				046601861660D3920018C25A /* MyCustomButton.m in Sources */,
-				046601871660D3920018C25A /* MyCustomButtonItem.m in Sources */,
-				0421D4A9166D0BDB00299E08 /* HelpLayer.m in Sources */,
 				0482BDAA16F9F85900796A83 /* HelloWorldLayer.m in Sources */,
 				0482BE9F16F9F89900796A83 /* CCAction.m in Sources */,
 				0482BEA016F9F89900796A83 /* CCActionCamera.m in Sources */,
@@ -1489,6 +1464,21 @@
 				0482BF0316F9F89900796A83 /* vec3.c in Sources */,
 				0482BF0416F9F89900796A83 /* vec4.c in Sources */,
 				0482BF0A16FA062700796A83 /* AppDelegate.m in Sources */,
+				04D152BC16FA13DD0025BCEC /* AudioUtil.m in Sources */,
+				04D152BD16FA13DD0025BCEC /* DialogUtil.m in Sources */,
+				04D152BE16FA13DD0025BCEC /* SysConfig.m in Sources */,
+				04D152C816FA14100025BCEC /* MyCustomButton.m in Sources */,
+				04D152C916FA14100025BCEC /* MyCustomButtonItem.m in Sources */,
+				04D152CB16FA14100025BCEC /* SlidingMenuGrid.m in Sources */,
+				04D152D116FA14390025BCEC /* BirdSprite.m in Sources */,
+				04D152D216FA14390025BCEC /* BonusSprite.m in Sources */,
+				04D152E016FA14670025BCEC /* GameLayer.m in Sources */,
+				04D152E116FA14670025BCEC /* HelpLayer.m in Sources */,
+				04D152E216FA14670025BCEC /* LoseLayer.m in Sources */,
+				04D152E316FA14670025BCEC /* MenuLayer.m in Sources */,
+				04D152E416FA14670025BCEC /* SettingLayer.m in Sources */,
+				04D152E516FA14670025BCEC /* WinLayer.m in Sources */,
+				04D152EB16FA16680025BCEC /* MyBaseLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

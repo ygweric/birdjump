@@ -53,17 +53,6 @@ typedef enum{
 @synthesize pauseLayer;
 
 
-+ (CCScene *)scene
-{
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        
-    }
-    CCScene *game = [CCScene node];
-    GameLayer *layer = [GameLayer node];
-    [game addChild:layer];
-    return game;
-}
-
 - (id)init {
 	NSLog(@"Game::---init");
 	if(![super init])
@@ -76,9 +65,9 @@ typedef enum{
     isTouching=NO;
     
     if (IS_IPHONE_5) {
-        [self setBg:@"bg-568h@2x.jpg"];
+        [self setBgWithFileName:@"bg-568h@2x.jpg"];
     }else{
-        [self setBg:SD_OR_HD(@"bg.jpg")];
+        [self setBgWithFileName:SD_OR_HD(@"bg.jpg")];
     }
     
     //----------非常重要的初始化工作

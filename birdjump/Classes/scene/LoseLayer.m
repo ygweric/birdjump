@@ -26,9 +26,9 @@
     }
     
     if (IS_IPHONE_5) {
-        [self setBg:@"bg-568h@2x.jpg"];
+        [self setBgWithFileName:@"bg-568h@2x.jpg"];
     }else{
-        [self setBg:SD_OR_HD(@"bg.jpg")];
+        [self setBgWithFileName:SD_OR_HD(@"bg.jpg")];
     }
     
     //分数

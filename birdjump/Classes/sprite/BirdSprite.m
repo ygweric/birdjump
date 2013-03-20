@@ -8,7 +8,6 @@
 
 #import "BirdSprite.h"
 #import "BonusSprite.h"
-#import "CustomParticleHeader.h"
 typedef struct{
     //bonus碰撞检测
     BOOL touched;
@@ -316,18 +315,7 @@ typedef struct{
                 maxTouchGid=ti.tid;
                 //tBlockBreak,撞碎block，速度不减
                 if (maxTouchGid==tBlockBreak) {
-                    /*
-                     CCParticleExplosion* emi= [[CustomParticleExplosion share]getEmitterByTexture:@"break_particle2.png" withNode:ly.gameWorld position:ccp(self.position.x, self.position.y+ self.textureRect.size.height )];
-                     emi.life=0.3;
-                     //                emi.
-                     emi.lifeVar=0.3;
-                     ccColor4F cStart= {0.8,0.8,0.8,0.8};
-                     emi.startColor=cStart;
-                     ccColor4F cEnd= {0.5,0.5,0.5,0.8};
-                     emi.startColor=cStart;
-                     //                emi.startColor= _ccColor4F {0.2,0.2,0.2,0.2};
-                     */
-                    CCParticleSystem *particles = [CCParticleSystemQuad particleWithFile:@"break_particle3.plist"];
+                     CCParticleSystem *particles = [CCParticleSystemQuad particleWithFile:@"break_particle3.plist"];
                     [particles setPosition:ccp(self.position.x, self.position.y- self.textureRect.size.height )];
                     [ly.gameWorld addChild:particles];
                     
@@ -455,7 +443,7 @@ typedef struct{
     ly.score+=touchScore;
     //tBlockSpike的话即扣分，也扣生命
     if (maxTouchGid==tBlockSpike) {
-        //        [[PlaySoundUtil sharePlaySoundUtil] playingBgSoundEffectWith:@"spike.wav"];
+
         if ([SysConfig needAudio]){
             [[SimpleAudioEngine sharedEngine] playEffect:@"spike.wav"];
         }
@@ -505,23 +493,19 @@ typedef struct{
     
     
     if (isJump) {
-        //        [[PlaySoundUtil sharePlaySoundUtil]playingBgSoundEffectWith:@"jump.wav"];
         if ([SysConfig needAudio]){
             [[SimpleAudioEngine sharedEngine] playEffect:@"jump.wav"];
         }
     }else if (isCollided) {
-        //        [[PlaySoundUtil sharePlaySoundUtil]playingBgSoundEffectWith:@"down.wav"];
         if ([SysConfig needAudio]){
             [[SimpleAudioEngine sharedEngine] playEffect:@"down.wav"];
         }
     }else if (isTouched) {
-        //        [[PlaySoundUtil sharePlaySoundUtil]playingBgSoundEffectWith:@"touch.wav"];
         if ([SysConfig needAudio]){
             [[SimpleAudioEngine sharedEngine] playEffect:@"touch.wav"];
         }
     }
     if (isCoin) {
-        //        [[PlaySoundUtil sharePlaySoundUtil]playingBgSoundEffectWith:@"coin.wav"];
         if ([SysConfig needAudio]){
             [[SimpleAudioEngine sharedEngine] playEffect:@"coin.wav"];
         }

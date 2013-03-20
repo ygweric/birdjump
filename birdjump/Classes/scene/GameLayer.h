@@ -15,7 +15,6 @@
 @property (retain,nonatomic) CCLayer* pauseLayer;
 @property BOOL isTrickWorking; //tric coin是否工作
 
-+ (CCScene *)scene;
 
 - (void)step:(ccTime)dt;
 -(void)initSpriteSheet;

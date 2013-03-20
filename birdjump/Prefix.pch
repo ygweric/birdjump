@@ -15,10 +15,9 @@
 #import "CUtil.h"
 #import "cocos2d.h"
 #import "SysConfig.h"
-#import "PlaySoundUtil.h"
 #import <mach/mach_time.h>
 #import "SimpleAudioEngine.h"
-#import "MyCustomLayer.h"
+#import "MyBaseLayer.h"
 #import "MyCustomButton.h"
 #import "DeviceSettings.h"
 
