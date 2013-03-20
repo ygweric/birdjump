@@ -241,8 +241,12 @@ typedef enum{
     
     
     //TODO 游戏开始需要给用户准备时间
-    scanMapUp=YES;
-    [self performSelector:@selector(startSchedueScanMap) withObject:nil afterDelay:1];
+//    scanMapUp=YES;
+//    [self performSelector:@selector(startSchedueScanMap) withObject:nil afterDelay:1];
+    
+    [self performSelector:@selector(startGame) withObject:nil afterDelay:kGAME_AFTER_DELAY];
+    [self getChildByTag:tPause].visible=YES;
+    
     self.isTouchEnabled=YES;
     
 	return self;
