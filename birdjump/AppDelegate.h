@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "OggSoungManager.h"
+
 @class RootViewController;
 
 @interface AppDelegate : NSObject <UIApplicationDelegate> {
