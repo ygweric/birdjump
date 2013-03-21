@@ -4,10 +4,10 @@
 #import "WinLayer.h"
 #import "LoseLayer.h"
 #import "MenuLayer.h"
-//#define BIRD_ORIGINAL_POSITION ccp(screenWidth/2, IS_IPAD()?96:48)
+//#define BIRD_ORIGINAL_POSITION ccp(screenWidth/2, IS_IPAD?96:48)
 
 #define BIRD_ORIGINAL_POSITION_X screenWidth/2
-#define BIRD_ORIGINAL_POSITION_Y IS_IPAD()?96:48
+#define BIRD_ORIGINAL_POSITION_Y IS_IPAD?96:48
 
 enum{
     tMIN=100,
@@ -80,7 +80,7 @@ typedef enum{
     NSUserDefaults* def=[NSUserDefaults standardUserDefaults];
     int level= [def integerForKey:UDF_LEVEL_SELECTED];
     NSString* m=[NSString stringWithFormat:@"birdjump%d.tmx",level];
-    NSString* mm = IS_IPAD()?[m stringByReplacingOccurrencesOfString:@".tmx" withString:@"-ipad.tmx"]:m;
+    NSString* mm = IS_IPAD?[m stringByReplacingOccurrencesOfString:@".tmx" withString:@"-ipad.tmx"]:m;
     NSLog(@"SD_HD_TMX(m)------%@,mm:%@",SD_HD_TMX(m),mm);
     gameWorld = [CCTMXTiledMap tiledMapWithTMXFile:SD_HD_TMX(m)];
     //init SpriteSheet
@@ -126,19 +126,19 @@ typedef enum{
     int l=kLIFE_INIT+currentLevel/kLIFE_LEVEL_SCALE;
 	CCLabelBMFont *scoreLabel = [CCLabelBMFont labelWithString:[NSString stringWithFormat:kGAME_SCORE_MODEL,0,l] fntFile:@"futura-48.fnt"];
 	[self addChild:scoreLabel z:zScoreLablel tag:tScoreLabel];
-	scoreLabel.position = ccp(screenWidth/2-20,screenHeight-(IS_IPAD()?100:40));
+	scoreLabel.position = ccp(screenWidth/2-20,screenHeight-(IS_IPAD?100:40));
     scoreLabel.scale=HD2SD_SCALE;
     
     int totalScore= [[NSUserDefaults standardUserDefaults] integerForKey:UDF_TOTAL_SCORE];
     CCLabelBMFont *totalScoreLabel = [CCLabelBMFont labelWithString:[NSString stringWithFormat:@"TOTAL SCORE IS %d",totalScore] fntFile:@"futura-48.fnt"];
 	[self addChild:totalScoreLabel z:zScoreLablel tag:tScoreLabel];
-	totalScoreLabel.position = ccp(screenWidth/2-20,screenHeight-(IS_IPAD()?200:80));
+	totalScoreLabel.position = ccp(screenWidth/2-20,screenHeight-(IS_IPAD?200:80));
     totalScoreLabel.scale=HD2SD_SCALE;
     
 
     CCMenu* pauseButton= [SpriteUtil createMenuWithFrame:@"button_pause.png" pressedColor:ccYELLOW target:self selector:@selector(pauseGame)];
     
-    pauseButton.position=ccp(winSize.width-(IS_IPAD()?100:50), winSize.height -(IS_IPAD()?100:50));
+    pauseButton.position=ccp(winSize.width-(IS_IPAD?100:50), winSize.height -(IS_IPAD?100:50));
     pauseButton.visible=NO;
     [self addChild:pauseButton z:zBelowOperation tag:tPause];
     
@@ -150,18 +150,18 @@ typedef enum{
     //audio & music
     BOOL isAudioOn= [[NSUserDefaults standardUserDefaults] boolForKey:UDF_AUDIO];
     CCMenu* audioButton= [SpriteUtil createMenuWithFrame:(isAudioOn?@"button_audio.png":@"button_audio_bar.png" )pressedColor:ccYELLOW target:self selector:@selector(audio:)];
-    audioButton.position=ccp(winSize.width /2-(IS_IPAD()?100:60), winSize.height*1/3+30);
+    audioButton.position=ccp(winSize.width /2-(IS_IPAD?100:60), winSize.height*1/3+30);
     [pauseLayer addChild:audioButton z:zAboveOperation tag:tAudio];
     
     BOOL isMusicOn= [[NSUserDefaults standardUserDefaults] boolForKey:UDF_MUSIC];
     CCMenu* musicButton= [SpriteUtil createMenuWithFrame:(isMusicOn?@"button_music.png":@"button_music_bar.png" )pressedColor:ccYELLOW target:self selector:@selector(music:)];
-    musicButton.position=ccp(winSize.width /2+(IS_IPAD()?100:60), winSize.height*1/3+30);
+    musicButton.position=ccp(winSize.width /2+(IS_IPAD?100:60), winSize.height*1/3+30);
     [pauseLayer addChild:musicButton z:zAboveOperation tag:tMusic];
     
     
     //menu & refresh & start
     CCMenu* menuButton= [SpriteUtil createMenuWithFrame:@"button_menu.png" pressedColor:ccYELLOW target:self selector:@selector(menu)];
-    menuButton.position=ccp(winSize.width /2-(IS_IPAD()?200:100), winSize.height*1/3-100);
+    menuButton.position=ccp(winSize.width /2-(IS_IPAD?200:100), winSize.height*1/3-100);
     [pauseLayer addChild:menuButton z:zAboveOperation];
     
     CCMenu* restartButton=[SpriteUtil createMenuWithFrame:@"button_refresh.png" pressedColor:ccYELLOW target:self selector:@selector(restartGame)];
@@ -169,7 +169,7 @@ typedef enum{
     [pauseLayer addChild:restartButton z:zAboveOperation];
     
     CCMenu* resumeButton= [SpriteUtil createMenuWithFrame:@"button_start.png" pressedColor:ccYELLOW target:self selector:@selector(resumeGame)];
-    resumeButton.position=ccp(winSize.width/2+(IS_IPAD()?200:100), winSize.height*1/3-100);
+    resumeButton.position=ccp(winSize.width/2+(IS_IPAD?200:100), winSize.height*1/3-100);
     [pauseLayer addChild:resumeButton z:zAboveOperation];
     
     
@@ -529,7 +529,7 @@ typedef enum{
     if (!isTouching) {
         return;
     }
-    float acc=IS_IPAD()?(isLeft?-0.3:0.3):(isLeft?-0.27:0.27);
+    float acc=IS_IPAD?(isLeft?-0.3:0.3):(isLeft?-0.27:0.27);
     float vx= bird.vel.x * 0.1f + acc * (1.0f - 0.1f) * 1000.0f;
     //     NSLog(@"bird old vel:%f,new:%f",bird.vel.x,vx);
     /*/

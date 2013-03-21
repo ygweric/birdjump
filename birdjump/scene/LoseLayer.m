@@ -39,11 +39,11 @@
     
     //操作菜单
     CCMenu* menuButton= [SpriteUtil createMenuWithFrame:@"button_menu.png" pressedColor:ccYELLOW target:self selector:@selector(menu)];
-    menuButton.position=ccp(winSize.width/2-(IS_IPAD()?150:70), winSize.height*1/3);
+    menuButton.position=ccp(winSize.width/2-(IS_IPAD?150:70), winSize.height*1/3);
     [self addChild:menuButton z:zAboveOperation];
     
     CCMenu* restartButton= [SpriteUtil createMenuWithFrame:@"button_refresh.png" pressedColor:ccYELLOW target:self selector:@selector(restart)];
-    restartButton.position=ccp(winSize.width/2+(IS_IPAD()?150:70), winSize.height*1/3);
+    restartButton.position=ccp(winSize.width/2+(IS_IPAD?150:70), winSize.height*1/3);
     [self addChild:restartButton z:zAboveOperation];
 
     return self;

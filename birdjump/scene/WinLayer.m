@@ -54,8 +54,8 @@ enum{
     //旋转金币圈动画
     CCNode* bonusNode1=[CCNode node];
     CCNode* bonusNode2=[CCNode node];
-    int radius1=IS_IPAD()? 100:50;
-    int radius2=IS_IPAD()? 200:100;
+    int radius1=IS_IPAD? 100:50;
+    int radius2=IS_IPAD? 200:100;
     int count=10;
     CGPoint birdPosition=ccp(self.boundingBox.size.width/2, self.boundingBox.size.height*2/3);
     for (int i=0; i<count; i++) {
@@ -93,17 +93,17 @@ enum{
     
     //操作菜单
     CCMenu* menuButton= [SpriteUtil createMenuWithFrame:@"button_menu.png" pressedColor:ccYELLOW target:self selector:@selector(menu)];
-    menuButton.position=ccp(winSize.width/2-(IS_IPAD()?200:100), winSize.height*1/3-(IS_IPAD()?100:50));
+    menuButton.position=ccp(winSize.width/2-(IS_IPAD?200:100), winSize.height*1/3-(IS_IPAD?100:50));
     menuButton.Visible=NO;
     [self addChild:menuButton z:zAboveOperation tag:tMenu];
     
     CCMenu* restartButton= [SpriteUtil createMenuWithFrame:@"button_refresh.png" pressedColor:ccYELLOW target:self selector:@selector(restart)];
-    restartButton.position=ccp(winSize.width/2, winSize.height*1/3-(IS_IPAD()?100:50));
+    restartButton.position=ccp(winSize.width/2, winSize.height*1/3-(IS_IPAD?100:50));
     restartButton.Visible=NO;
     [self addChild:restartButton z:zAboveOperation tag:tRefresh];
     
     CCMenu* nextLevelButton= [SpriteUtil createMenuWithFrame:@"button_next_level.png" pressedColor:ccYELLOW target:self selector:@selector(nextLevel)];
-    nextLevelButton.position=ccp(winSize.width/2+(IS_IPAD()?200:100), winSize.height*1/3-(IS_IPAD()?100:50));
+    nextLevelButton.position=ccp(winSize.width/2+(IS_IPAD?200:100), winSize.height*1/3-(IS_IPAD?100:50));
     nextLevelButton.Visible=NO;
     [self addChild:nextLevelButton z:zAboveOperation tag:tNextLevel];
     return self;

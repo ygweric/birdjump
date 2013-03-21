@@ -28,10 +28,10 @@
     CCLabelTTF *label = [CCLabelTTF labelWithString:
                          [NSString stringWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"help" ofType:nil]
                           encoding:NSUTF8StringEncoding error:NULL] dimensions: CGSizeMake(winSize.width -20, winSize.height) hAlignment: UITextAlignmentCenter fontName:@"Arial"
-                            fontSize: (IS_IPAD()?32:15)];
+                            fontSize: (IS_IPAD?32:15)];
     
     
-    [label setPosition:CGPointMake(winSize.width/2, winSize.height -(IS_IPAD()? 140:70))];
+    [label setPosition:CGPointMake(winSize.width/2, winSize.height -(IS_IPAD? 140:70))];
     
     [label setColor:ccBLACK];
     [label setAnchorPoint:CGPointMake(0.5f, 1.0f)];
@@ -66,7 +66,7 @@
      nil
 	 ];
     menu.anchorPoint=CGPointZero;
-    menu.position=ccp(winSize.width/2,(IS_IPAD()? 340:110));
+    menu.position=ccp(winSize.width/2,(IS_IPAD? 340:110));
 	[self addChild: menu];
     
     

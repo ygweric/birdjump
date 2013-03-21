@@ -14,10 +14,70 @@
 
 @synthesize window=window_, navController=navController_, director=director_;
 
+//######### for adwhirl ########
+- (NSString *)adWhirlApplicationKey {
+    return (IS_IPAD?KEY_AD_ADWHIRL_IPAD:KEY_AD_ADWHIRL_IPHONE);
+}
+- (UIViewController *)viewControllerForPresentingModalView {
+    return [CCDirector sharedDirector];
+}
+-(void)showRateAlert{
+    UIAlertView* alert=[[[UIAlertView alloc]initWithTitle:@"Rate Bird Fly" message:@"If you enjoy playing Bird Fly, would you mind taking a moment to rate it? It won't take more than a minute.\n Thanks for your support!" delegate:self cancelButtonTitle:@"No,Thanks" otherButtonTitles:@"Rate It Now",@"Remind Me Later", nil]autorelease];
+    [alert show];
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    switch (buttonIndex) {
+        case 0:
+            [MobClick event:@"notRate"];
+            break;
+        case 1:
+            [[UIApplication sharedApplication] openURL: [NSURL URLWithString:@"itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=583715731"]];
+            [MobClick event:@"rateByAlert"];
+            break;
+        case 2:
+            [MobClick event:@"rateLater"];
+            break;
+    }
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // init app configure
+    
+#ifndef DEBUG
+    [MobClick startWithAppkey:@"xxx"];
+#else
+    [MobClick startWithAppkey:IS_IPAD?KEY_UMENG_IPAP:KEY_UMENG_IPHONE];
+#endif
+    
     NSUserDefaults* def=[NSUserDefaults standardUserDefaults];
+    /*
+     升级须知
+     每次app生新版本，
+     1、appVersion加一
+     2、然后在case中做对应修改
+     */
+    int appVersion=1;
+    int currentVersion=[def integerForKey:UFK_CURRENT_VERSION];
+    if (appVersion!=currentVersion) { //未升级
+        switch (currentVersion) {
+            case 0:
+                //首次游戏的初始化
+                [def removeObjectForKey:HAVE_SETTED];
+                [def setBool:YES forKey:UDF_AUDIO];
+                [def setBool:YES forKey:UDF_MUSIC];
+                [def setInteger:0 forKey:UDF_DIFFICULLY];
+                [def setInteger:0 forKey:UFK_CURRENT_VERSION];
+                
+                [def setInteger:0 forKey:UFK_TOTAL_LAUNCH_COUNT];
+                [def setDouble:([[NSDate date]timeIntervalSince1970]+kRATE_DAYS) forKey:UFK_NEXT_ALERT_RATE_TIME];
+                
+                [def setBool:YES forKey:UFK_SHOW_AD];
+            case 1:
+                break;
+        }
+        [def setInteger:appVersion forKey:UFK_CURRENT_VERSION];
+    }
     [SysConfig setNeedAudio: [def boolForKey:UDF_AUDIO]];
     [SysConfig setNeedMusic: [def boolForKey:UDF_MUSIC]];
     [SysConfig setDifficulty:[def integerForKey:UDF_DIFFICULLY]];
@@ -25,6 +85,26 @@
     
     if ([SysConfig needMusic]) {
         [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"gamebg.mp3" loop:YES];
+    }
+
+    /*
+     //提醒评分
+     第三次启动提醒，以后每隔5天提醒一次
+     以后不再提醒为5*2天不在提醒
+     */
+    NSLog(@"rate---launchCount:%d,next:%f,curr:%f",[def integerForKey:UFK_TOTAL_LAUNCH_COUNT],[def doubleForKey:UFK_NEXT_ALERT_RATE_TIME],[[NSDate date]timeIntervalSince1970]);
+    if ([def objectForKey:UFK_TOTAL_LAUNCH_COUNT] ) {
+        [def setInteger:([def integerForKey:UFK_TOTAL_LAUNCH_COUNT]+1) forKey:UFK_TOTAL_LAUNCH_COUNT];
+        if ([def integerForKey:UFK_TOTAL_LAUNCH_COUNT]>kRATE_FIRST_TIME) {
+            [self showRateAlert];
+            [def removeObjectForKey:UFK_TOTAL_LAUNCH_COUNT];
+        }
+    }else{
+        double nextAlert= [def doubleForKey:UFK_NEXT_ALERT_RATE_TIME];
+        if (nextAlert<[[NSDate date]timeIntervalSince1970]) {
+            [self showRateAlert];
+            [def setDouble:([[NSDate date]timeIntervalSince1970]+kRATE_DAYS) forKey:UFK_NEXT_ALERT_RATE_TIME];
+        }
     }
 
     
@@ -97,8 +177,30 @@
 	// and add the scene to the stack. The director will run it when it automatically when the view is displayed.
 	[director_ pushScene: [MenuLayer scene]]; 
 
+    //请求广告
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:UFK_SHOW_AD]) {
+        AdWhirlView *adWhirlView = [AdWhirlView requestAdWhirlViewWithDelegate:self];
+        adWhirlView.tag=kTAG_Ad_VIEW;
+        [[CCDirector sharedDirector].view addSubview:adWhirlView];
+    }
+    
 	return YES;
 }
+- (void)adWhirlDidReceiveAd:(AdWhirlView *)adView {
+    [UIView beginAnimations:@"AdWhirlDelegate.adWhirlDidReceiveAd:"
+                    context:nil];
+    
+    [UIView setAnimationDuration:0.7];
+    
+    CGSize adSize = [adView actualAdSize];
+    CGRect newFrame = adView.frame;
+    CGSize winsize=[CCDirector sharedDirector].winSize;
+    newFrame.size = adSize;
+    newFrame.origin.x = (winsize.width - adSize.width)/ 2;
+    adView.frame = newFrame;
+    [UIView commitAnimations];
+}
+
 
 // support 6-
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

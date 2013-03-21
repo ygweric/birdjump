@@ -244,7 +244,7 @@ typedef struct{
             //            ti =[self getTouchInfo:ly position:npt3 currentTouchInfo:ti touchedCoinPos:touchedCoinPos];
             CGPoint npt4 =ccp(self.position.x - self.textureRect.size.width *1/ 4, self.position.y + self.textureRect.size.height / 2 );
             ti =[self getTouchInfo:ly position:npt4 currentTouchInfo:ti touchedCoinPos:touchedCoinPos];
-            if (IS_IPAD()) {
+            if (IS_IPAD) {
             CGPoint npt5 =ccp(self.position.x- self.textureRect.size.width *2/ 4, self.position.y + self.textureRect.size.height / 2 );
             ti =[self getTouchInfo:ly position:npt5 currentTouchInfo:ti touchedCoinPos:touchedCoinPos];
             }
@@ -287,13 +287,13 @@ typedef struct{
         }else{
             //HERE 这里碰撞检测的x、y坐标偏移值可以初步判断，但由于texture大小不统一，所以需要具体的测试才能精确
 //            NSLog(@"from ------down");
-            CGFloat cY=self.position.y -(IS_IPAD()?(self.textureRect.size.height*(3/4.0)):(self.textureRect.size.height*(2/4.0)));
+            CGFloat cY=self.position.y -(IS_IPAD?(self.textureRect.size.height*(3/4.0)):(self.textureRect.size.height*(2/4.0)));
             TouchInfo ti={NO,-1};
             CGPoint npt1 =ccp(self.position.x, cY );
             ti =[self getTouchInfo:ly position:npt1 currentTouchInfo:ti touchedCoinPos:touchedCoinPos];
             CGPoint npt2 =ccp(self.position.x + self.textureRect.size.width *1/ 4, cY);
             ti =[self getTouchInfo:ly position:npt2 currentTouchInfo:ti touchedCoinPos:touchedCoinPos];
-//            if (!IS_IPAD()) {
+//            if (!IS_IPAD) {
 //               CGPoint npt3 =ccp(self.position.x + self.textureRect.size.width *2/ 4, cY);
 //                   ti =[self getTouchInfo:ly position:npt3 currentTouchInfo:ti touchedCoinPos:touchedCoinPos];
 //                CGPoint npt31 =ccp(self.position.x + self.textureRect.size.width *3/ 4, cY);
@@ -302,11 +302,11 @@ typedef struct{
             
             CGPoint npt4 =ccp(self.position.x - self.textureRect.size.width *1/ 4, cY);
             ti =[self getTouchInfo:ly position:npt4 currentTouchInfo:ti touchedCoinPos:touchedCoinPos];
-             if (IS_IPAD()) {
+             if (IS_IPAD) {
             CGPoint npt5 =ccp(self.position.x- self.textureRect.size.width *2/ 4, cY);
             ti =[self getTouchInfo:ly position:npt5 currentTouchInfo:ti touchedCoinPos:touchedCoinPos];
              }
-//             if (!IS_IPAD()) {
+//             if (!IS_IPAD) {
 //              CGPoint npt6 =ccp(self.position.x- self.textureRect.size.width *3/ 4, cY);
 //                        ti =[self getTouchInfo:ly position:npt6 currentTouchInfo:ti touchedCoinPos:touchedCoinPos];
 //             }
@@ -355,9 +355,9 @@ typedef struct{
             TouchInfo ti={NO,-1};
             CGPoint npt1 =ccp(self.position.x- self.textureRect.size.width / 2 , self.position.y );
             ti =[self getTouchInfo:ly position:npt1 currentTouchInfo:ti touchedCoinPos:touchedCoinPos];
-            CGPoint npt2 =ccp(self.position.x- self.textureRect.size.width / 2 , self.position.y-self.textureRect.size.height *(IS_IPAD()?1/4:0)  );
+            CGPoint npt2 =ccp(self.position.x- self.textureRect.size.width / 2 , self.position.y-self.textureRect.size.height *(IS_IPAD?1/4:0)  );
             ti =[self getTouchInfo:ly position:npt2 currentTouchInfo:ti touchedCoinPos:touchedCoinPos];
-            CGPoint npt3 =ccp(self.position.x- self.textureRect.size.width / 2 , self.position.y-self.textureRect.size.height *(IS_IPAD()?2/4:0) );
+            CGPoint npt3 =ccp(self.position.x- self.textureRect.size.width / 2 , self.position.y-self.textureRect.size.height *(IS_IPAD?2/4:0) );
             ti =[self getTouchInfo:ly position:npt3 currentTouchInfo:ti touchedCoinPos:touchedCoinPos];
             CGPoint npt4 =ccp(self.position.x- self.textureRect.size.width / 2 , self.position.y+self.textureRect.size.height *1/ 4 );
             ti =[self getTouchInfo:ly position:npt4 currentTouchInfo:ti touchedCoinPos:touchedCoinPos];
@@ -401,13 +401,13 @@ typedef struct{
              self.vel=ccVertexMake(0, self.vel.y);
         }else{
             //            NSLog(@"from ------right");
-//            CGFloat cX=self.position.x+ self.textureRect.size.width*(IS_IPAD()?1/2:) ;
+//            CGFloat cX=self.position.x+ self.textureRect.size.width*(IS_IPAD?1/2:) ;
             TouchInfo ti={NO,-1};
             CGPoint npt1 =ccp(self.position.x+ self.textureRect.size.width / 2 , self.position.y );
             ti =[self getTouchInfo:ly position:npt1 currentTouchInfo:ti touchedCoinPos:touchedCoinPos];
-            CGPoint npt2 =ccp(self.position.x+ self.textureRect.size.width / 2 , self.position.y-self.textureRect.size.height *(IS_IPAD()?1/4 :0) );
+            CGPoint npt2 =ccp(self.position.x+ self.textureRect.size.width / 2 , self.position.y-self.textureRect.size.height *(IS_IPAD?1/4 :0) );
             ti =[self getTouchInfo:ly position:npt2 currentTouchInfo:ti touchedCoinPos:touchedCoinPos];
-            CGPoint npt3 =ccp(self.position.x+ self.textureRect.size.width / 2 , self.position.y-self.textureRect.size.height * (IS_IPAD()?2/ 4 :0) );
+            CGPoint npt3 =ccp(self.position.x+ self.textureRect.size.width / 2 , self.position.y-self.textureRect.size.height * (IS_IPAD?2/ 4 :0) );
             ti =[self getTouchInfo:ly position:npt3 currentTouchInfo:ti touchedCoinPos:touchedCoinPos];
             CGPoint npt4 =ccp(self.position.x+ self.textureRect.size.width / 2 , self.position.y+self.textureRect.size.height *1/ 4 );
             ti =[self getTouchInfo:ly position:npt4 currentTouchInfo:ti touchedCoinPos:touchedCoinPos];
