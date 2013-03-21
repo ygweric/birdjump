@@ -38,19 +38,11 @@
     [self addChild:loseLabel];
     
     //操作菜单
-    CCSprite* mn= [CCSprite spriteWithSpriteFrameName:@"button_menu.png"];
-    CCSprite* ms= [CCSprite spriteWithSpriteFrameName:@"button_menu.png"];
-    ms.color=ccYELLOW;
-    CCMenuItemSprite* m=[CCMenuItemSprite itemFromNormalSprite:mn selectedSprite:ms target:self selector:@selector(menu)];
-    CCMenu* menuButton= [CCMenu menuWithItems:m, nil];
+    CCMenu* menuButton= [SpriteUtil createMenuWithFrame:@"button_menu.png" pressedColor:ccYELLOW target:self selector:@selector(menu)];
     menuButton.position=ccp(winSize.width/2-(IS_IPAD()?150:70), winSize.height*1/3);
     [self addChild:menuButton z:zAboveOperation];
     
-    CCSprite* rn= [CCSprite spriteWithSpriteFrameName:@"button_refresh.png"];
-    CCSprite* rs= [CCSprite spriteWithSpriteFrameName:@"button_refresh.png"];
-    rs.color=ccYELLOW;
-    CCMenuItemSprite* r=[CCMenuItemSprite itemFromNormalSprite:rn selectedSprite:rs target:self selector:@selector(restart)];
-    CCMenu* restartButton= [CCMenu menuWithItems:r, nil];
+    CCMenu* restartButton= [SpriteUtil createMenuWithFrame:@"button_refresh.png" pressedColor:ccYELLOW target:self selector:@selector(restart)];
     restartButton.position=ccp(winSize.width/2+(IS_IPAD()?150:70), winSize.height*1/3);
     [self addChild:restartButton z:zAboveOperation];
 

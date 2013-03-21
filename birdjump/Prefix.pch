@@ -20,6 +20,7 @@
 #import "MyBaseLayer.h"
 #import "MyCustomButton.h"
 #import "DeviceSettings.h"
+#import "SpriteUtil.h"
 
 #define RANDOM_SEED() srandom((unsigned)(mach_absolute_time() & 0xFFFFFFFF))
 #endif

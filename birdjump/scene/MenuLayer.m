@@ -111,7 +111,7 @@ enum {
             CCSprite* selectedSprite = [CCSprite spriteWithFile:SD_OR_HD(@"menu_item_bg.png")];
             ccColor3B color= ccBLUE;
             selectedSprite.color= color;
-            CCMenuItemSprite* item =[CCMenuItemSprite itemFromNormalSprite:normalSprite selectedSprite:selectedSprite target:self selector:@selector(LaunchLevel:)];
+            CCMenuItemSprite* item =[CCMenuItemSprite itemWithNormalSprite:normalSprite selectedSprite:selectedSprite target:self selector:@selector(LaunchLevel:)];
             item.tag=i;
             int levelPassed= [[NSUserDefaults standardUserDefaults]integerForKey:UDF_LEVEL_PASSED];
             CCNode* levelInfo=nil;
@@ -119,9 +119,9 @@ enum {
                 levelInfo=[[CCLabelBMFont alloc]initWithString:[NSString stringWithFormat:@"%d",i] fntFile:@"futura-48.fnt"];
                 levelInfo.scale=HD2SD_SCALE;
             }else if(i==kMAX_LEVEL_REAL+1){
-                levelInfo=[CCMenuItemImage itemFromNormalImage:SD_OR_HD(@"level_what.png") selectedImage:SD_OR_HD(@"level_what.png")];
+                levelInfo=[CCMenuItemImage itemWithNormalImage:SD_OR_HD(@"level_what.png") selectedImage:SD_OR_HD(@"level_what.png")];
             }else{
-                levelInfo=[CCMenuItemImage itemFromNormalImage:SD_OR_HD(@"level_lock.png") selectedImage:SD_OR_HD(@"level_lock.png")];
+                levelInfo=[CCMenuItemImage itemWithNormalImage:SD_OR_HD(@"level_lock.png") selectedImage:SD_OR_HD(@"level_lock.png")];
             }
             
             levelInfo. position=ccp(item.contentSize.width/2, item.contentSize.height/2);

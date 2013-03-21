@@ -25,10 +25,10 @@
     }
     //help content
     
-    CCLabelTTF *label = [CCLabelTTF labelWithString: [NSString stringWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"help" ofType:nil] encoding:NSUTF8StringEncoding error:NULL]
-                                        dimensions: CGSizeMake(winSize.width -20, winSize.height)
-                                         alignment: UITextAlignmentCenter
-                                          fontName:@"Arial" fontSize: (IS_IPAD()?32:15)];
+    CCLabelTTF *label = [CCLabelTTF labelWithString:
+                         [NSString stringWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"help" ofType:nil]
+                          encoding:NSUTF8StringEncoding error:NULL] dimensions: CGSizeMake(winSize.width -20, winSize.height) hAlignment: UITextAlignmentCenter fontName:@"Arial"
+                            fontSize: (IS_IPAD()?32:15)];
     
     
     [label setPosition:CGPointMake(winSize.width/2, winSize.height -(IS_IPAD()? 140:70))];

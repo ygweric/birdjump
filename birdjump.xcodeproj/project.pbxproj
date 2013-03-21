@@ -78,7 +78,6 @@
 		044A7B4316650BBD00DF4BF6 /* birdjump6.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 044A7B4016650BBD00DF4BF6 /* birdjump6.tmx */; };
 		044A7B4416650BBD00DF4BF6 /* birdjump7.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 044A7B4116650BBD00DF4BF6 /* birdjump7.tmx */; };
 		04581DB9167610CA00DC85E8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04581DB8167610CA00DC85E8 /* StoreKit.framework */; };
-		0482BDAA16F9F85900796A83 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482BDA916F9F85900796A83 /* HelloWorldLayer.m */; };
 		0482BE9F16F9F89900796A83 /* CCAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482BDAE16F9F89800796A83 /* CCAction.m */; };
 		0482BEA016F9F89900796A83 /* CCActionCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482BDB016F9F89800796A83 /* CCActionCamera.m */; };
 		0482BEA116F9F89900796A83 /* CCActionCatmullRom.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482BDB216F9F89800796A83 /* CCActionCatmullRom.m */; };
@@ -184,27 +183,29 @@
 		0482BF0516F9F89900796A83 /* LICENSE_cocos2d.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0482BE9C16F9F89900796A83 /* LICENSE_cocos2d.txt */; };
 		0482BF0616F9F89900796A83 /* LICENSE_CocosDenshion.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0482BE9D16F9F89900796A83 /* LICENSE_CocosDenshion.txt */; };
 		0482BF0716F9F89900796A83 /* LICENSE_Kazmath.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0482BE9E16F9F89900796A83 /* LICENSE_Kazmath.txt */; };
-		0482BF0A16FA062700796A83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482BF0916FA062700796A83 /* AppDelegate.m */; };
 		04A673E21661328100525A70 /* button_select.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04A673E11661328100525A70 /* button_select.mp3 */; };
+		04C44A3716FB3BFA007288DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C44A3416FB3BFA007288DC /* AppDelegate.m */; };
+		04C44A3816FB3BFA007288DC /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C44A3616FB3BFA007288DC /* HelloWorldLayer.m */; };
+		04C44A6016FB3C06007288DC /* MyBaseLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C44A3B16FB3C06007288DC /* MyBaseLayer.m */; };
+		04C44A6116FB3C06007288DC /* MyCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C44A3D16FB3C06007288DC /* MyCustomButton.m */; };
+		04C44A6216FB3C06007288DC /* MyCustomButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C44A3F16FB3C06007288DC /* MyCustomButtonItem.m */; };
+		04C44A6316FB3C06007288DC /* SlidingMenuGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C44A4116FB3C06007288DC /* SlidingMenuGrid.m */; };
+		04C44A6416FB3C06007288DC /* SpriteUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C44A4316FB3C06007288DC /* SpriteUtil.m */; };
+		04C44A6516FB3C06007288DC /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C44A4616FB3C06007288DC /* GameLayer.m */; };
+		04C44A6616FB3C06007288DC /* HelpLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C44A4816FB3C06007288DC /* HelpLayer.m */; };
+		04C44A6716FB3C06007288DC /* LoseLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C44A4A16FB3C06007288DC /* LoseLayer.m */; };
+		04C44A6816FB3C06007288DC /* MenuLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C44A4C16FB3C06007288DC /* MenuLayer.m */; };
+		04C44A6916FB3C06007288DC /* SettingLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C44A4E16FB3C06007288DC /* SettingLayer.m */; };
+		04C44A6A16FB3C06007288DC /* WinLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C44A5016FB3C06007288DC /* WinLayer.m */; };
+		04C44A6B16FB3C06007288DC /* BirdSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C44A5316FB3C06007288DC /* BirdSprite.m */; };
+		04C44A6C16FB3C06007288DC /* BonusSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C44A5516FB3C06007288DC /* BonusSprite.m */; };
+		04C44A6D16FB3C06007288DC /* AudioUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C44A5816FB3C06007288DC /* AudioUtil.m */; };
+		04C44A6E16FB3C06007288DC /* DialogUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C44A5D16FB3C06007288DC /* DialogUtil.m */; };
+		04C44A6F16FB3C06007288DC /* SysConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C44A5F16FB3C06007288DC /* SysConfig.m */; };
 		04CFCD32164ACF690071FA19 /* character.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04CFCD30164ACF690071FA19 /* character.plist */; };
 		04CFCD33164ACF690071FA19 /* character.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CFCD31164ACF690071FA19 /* character.png */; };
 		04D0E9E016555D6200D9EFB6 /* layer_award.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04D0E9DE16555D6200D9EFB6 /* layer_award.plist */; };
 		04D0E9E116555D6200D9EFB6 /* layer_award.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D0E9DF16555D6200D9EFB6 /* layer_award.png */; };
-		04D152BC16FA13DD0025BCEC /* AudioUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152B416FA13DD0025BCEC /* AudioUtil.m */; };
-		04D152BD16FA13DD0025BCEC /* DialogUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152B916FA13DD0025BCEC /* DialogUtil.m */; };
-		04D152BE16FA13DD0025BCEC /* SysConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152BB16FA13DD0025BCEC /* SysConfig.m */; };
-		04D152C816FA14100025BCEC /* MyCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152C116FA14100025BCEC /* MyCustomButton.m */; };
-		04D152C916FA14100025BCEC /* MyCustomButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152C316FA14100025BCEC /* MyCustomButtonItem.m */; };
-		04D152CB16FA14100025BCEC /* SlidingMenuGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152C716FA14100025BCEC /* SlidingMenuGrid.m */; };
-		04D152D116FA14390025BCEC /* BirdSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152CE16FA14390025BCEC /* BirdSprite.m */; };
-		04D152D216FA14390025BCEC /* BonusSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152D016FA14390025BCEC /* BonusSprite.m */; };
-		04D152E016FA14670025BCEC /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152D516FA14670025BCEC /* GameLayer.m */; };
-		04D152E116FA14670025BCEC /* HelpLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152D716FA14670025BCEC /* HelpLayer.m */; };
-		04D152E216FA14670025BCEC /* LoseLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152D916FA14670025BCEC /* LoseLayer.m */; };
-		04D152E316FA14670025BCEC /* MenuLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152DB16FA14670025BCEC /* MenuLayer.m */; };
-		04D152E416FA14670025BCEC /* SettingLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152DD16FA14670025BCEC /* SettingLayer.m */; };
-		04D152E516FA14670025BCEC /* WinLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152DF16FA14670025BCEC /* WinLayer.m */; };
-		04D152EB16FA16680025BCEC /* MyBaseLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D152EA16FA16670025BCEC /* MyBaseLayer.m */; };
 		04E20D8E164C2978003EA611 /* boostloop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04E20D8B164C2978003EA611 /* boostloop.mp3 */; };
 		04E20D8F164C2978003EA611 /* coin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 04E20D8C164C2978003EA611 /* coin.wav */; };
 		04E20D92164C2AC4003EA611 /* jump.wav in Resources */ = {isa = PBXBuildFile; fileRef = 04E20D91164C2AC4003EA611 /* jump.wav */; };
@@ -294,8 +295,6 @@
 		044A7B4016650BBD00DF4BF6 /* birdjump6.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = birdjump6.tmx; path = Resources/Images/birdjump6.tmx; sourceTree = "<group>"; };
 		044A7B4116650BBD00DF4BF6 /* birdjump7.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = birdjump7.tmx; path = Resources/Images/birdjump7.tmx; sourceTree = "<group>"; };
 		04581DB8167610CA00DC85E8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		0482BDA816F9F85900796A83 /* HelloWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
-		0482BDA916F9F85900796A83 /* HelloWorldLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		0482BDAD16F9F89800796A83 /* CCAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAction.h; sourceTree = "<group>"; };
 		0482BDAE16F9F89800796A83 /* CCAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAction.m; sourceTree = "<group>"; };
 		0482BDAF16F9F89800796A83 /* CCActionCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCActionCamera.h; sourceTree = "<group>"; };
@@ -527,46 +526,50 @@
 		0482BE9C16F9F89900796A83 /* LICENSE_cocos2d.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_cocos2d.txt; sourceTree = "<group>"; };
 		0482BE9D16F9F89900796A83 /* LICENSE_CocosDenshion.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_CocosDenshion.txt; sourceTree = "<group>"; };
 		0482BE9E16F9F89900796A83 /* LICENSE_Kazmath.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_Kazmath.txt; sourceTree = "<group>"; };
-		0482BF0816FA062700796A83 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		0482BF0916FA062700796A83 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		04A673E11661328100525A70 /* button_select.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = button_select.mp3; path = Resources/music/button_select.mp3; sourceTree = "<group>"; };
+		04C44A3316FB3BFA007288DC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04C44A3416FB3BFA007288DC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04C44A3516FB3BFA007288DC /* HelloWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
+		04C44A3616FB3BFA007288DC /* HelloWorldLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
+		04C44A3A16FB3C06007288DC /* MyBaseLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBaseLayer.h; sourceTree = "<group>"; };
+		04C44A3B16FB3C06007288DC /* MyBaseLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBaseLayer.m; sourceTree = "<group>"; };
+		04C44A3C16FB3C06007288DC /* MyCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomButton.h; sourceTree = "<group>"; };
+		04C44A3D16FB3C06007288DC /* MyCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomButton.m; sourceTree = "<group>"; };
+		04C44A3E16FB3C06007288DC /* MyCustomButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomButtonItem.h; sourceTree = "<group>"; };
+		04C44A3F16FB3C06007288DC /* MyCustomButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomButtonItem.m; sourceTree = "<group>"; };
+		04C44A4016FB3C06007288DC /* SlidingMenuGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlidingMenuGrid.h; sourceTree = "<group>"; };
+		04C44A4116FB3C06007288DC /* SlidingMenuGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlidingMenuGrid.m; sourceTree = "<group>"; };
+		04C44A4216FB3C06007288DC /* SpriteUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteUtil.h; sourceTree = "<group>"; };
+		04C44A4316FB3C06007288DC /* SpriteUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpriteUtil.m; sourceTree = "<group>"; };
+		04C44A4516FB3C06007288DC /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
+		04C44A4616FB3C06007288DC /* GameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLayer.m; sourceTree = "<group>"; };
+		04C44A4716FB3C06007288DC /* HelpLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpLayer.h; sourceTree = "<group>"; };
+		04C44A4816FB3C06007288DC /* HelpLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpLayer.m; sourceTree = "<group>"; };
+		04C44A4916FB3C06007288DC /* LoseLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoseLayer.h; sourceTree = "<group>"; };
+		04C44A4A16FB3C06007288DC /* LoseLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoseLayer.m; sourceTree = "<group>"; };
+		04C44A4B16FB3C06007288DC /* MenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuLayer.h; sourceTree = "<group>"; };
+		04C44A4C16FB3C06007288DC /* MenuLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuLayer.m; sourceTree = "<group>"; };
+		04C44A4D16FB3C06007288DC /* SettingLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingLayer.h; sourceTree = "<group>"; };
+		04C44A4E16FB3C06007288DC /* SettingLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingLayer.m; sourceTree = "<group>"; };
+		04C44A4F16FB3C06007288DC /* WinLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinLayer.h; sourceTree = "<group>"; };
+		04C44A5016FB3C06007288DC /* WinLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinLayer.m; sourceTree = "<group>"; };
+		04C44A5216FB3C06007288DC /* BirdSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BirdSprite.h; sourceTree = "<group>"; };
+		04C44A5316FB3C06007288DC /* BirdSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirdSprite.m; sourceTree = "<group>"; };
+		04C44A5416FB3C06007288DC /* BonusSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BonusSprite.h; sourceTree = "<group>"; };
+		04C44A5516FB3C06007288DC /* BonusSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BonusSprite.m; sourceTree = "<group>"; };
+		04C44A5716FB3C06007288DC /* AudioUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioUtil.h; sourceTree = "<group>"; };
+		04C44A5816FB3C06007288DC /* AudioUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioUtil.m; sourceTree = "<group>"; };
+		04C44A5916FB3C06007288DC /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		04C44A5A16FB3C06007288DC /* CUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUtil.h; sourceTree = "<group>"; };
+		04C44A5B16FB3C06007288DC /* DeviceSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceSettings.h; sourceTree = "<group>"; };
+		04C44A5C16FB3C06007288DC /* DialogUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialogUtil.h; sourceTree = "<group>"; };
+		04C44A5D16FB3C06007288DC /* DialogUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialogUtil.m; sourceTree = "<group>"; };
+		04C44A5E16FB3C06007288DC /* SysConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SysConfig.h; sourceTree = "<group>"; };
+		04C44A5F16FB3C06007288DC /* SysConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SysConfig.m; sourceTree = "<group>"; };
 		04CFCD30164ACF690071FA19 /* character.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = character.plist; sourceTree = "<group>"; };
 		04CFCD31164ACF690071FA19 /* character.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = character.png; sourceTree = "<group>"; };
 		04D0E9DE16555D6200D9EFB6 /* layer_award.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = layer_award.plist; sourceTree = "<group>"; };
 		04D0E9DF16555D6200D9EFB6 /* layer_award.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = layer_award.png; sourceTree = "<group>"; };
-		04D152B316FA13DD0025BCEC /* AudioUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioUtil.h; sourceTree = "<group>"; };
-		04D152B416FA13DD0025BCEC /* AudioUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioUtil.m; sourceTree = "<group>"; };
-		04D152B516FA13DD0025BCEC /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		04D152B616FA13DD0025BCEC /* CUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUtil.h; sourceTree = "<group>"; };
-		04D152B716FA13DD0025BCEC /* DeviceSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceSettings.h; sourceTree = "<group>"; };
-		04D152B816FA13DD0025BCEC /* DialogUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialogUtil.h; sourceTree = "<group>"; };
-		04D152B916FA13DD0025BCEC /* DialogUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialogUtil.m; sourceTree = "<group>"; };
-		04D152BA16FA13DD0025BCEC /* SysConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SysConfig.h; sourceTree = "<group>"; };
-		04D152BB16FA13DD0025BCEC /* SysConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SysConfig.m; sourceTree = "<group>"; };
-		04D152C016FA14100025BCEC /* MyCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomButton.h; sourceTree = "<group>"; };
-		04D152C116FA14100025BCEC /* MyCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomButton.m; sourceTree = "<group>"; };
-		04D152C216FA14100025BCEC /* MyCustomButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomButtonItem.h; sourceTree = "<group>"; };
-		04D152C316FA14100025BCEC /* MyCustomButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomButtonItem.m; sourceTree = "<group>"; };
-		04D152C616FA14100025BCEC /* SlidingMenuGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlidingMenuGrid.h; sourceTree = "<group>"; };
-		04D152C716FA14100025BCEC /* SlidingMenuGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlidingMenuGrid.m; sourceTree = "<group>"; };
-		04D152CD16FA14390025BCEC /* BirdSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BirdSprite.h; sourceTree = "<group>"; };
-		04D152CE16FA14390025BCEC /* BirdSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirdSprite.m; sourceTree = "<group>"; };
-		04D152CF16FA14390025BCEC /* BonusSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BonusSprite.h; sourceTree = "<group>"; };
-		04D152D016FA14390025BCEC /* BonusSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BonusSprite.m; sourceTree = "<group>"; };
-		04D152D416FA14670025BCEC /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
-		04D152D516FA14670025BCEC /* GameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLayer.m; sourceTree = "<group>"; };
-		04D152D616FA14670025BCEC /* HelpLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpLayer.h; sourceTree = "<group>"; };
-		04D152D716FA14670025BCEC /* HelpLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpLayer.m; sourceTree = "<group>"; };
-		04D152D816FA14670025BCEC /* LoseLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoseLayer.h; sourceTree = "<group>"; };
-		04D152D916FA14670025BCEC /* LoseLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoseLayer.m; sourceTree = "<group>"; };
-		04D152DA16FA14670025BCEC /* MenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuLayer.h; sourceTree = "<group>"; };
-		04D152DB16FA14670025BCEC /* MenuLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuLayer.m; sourceTree = "<group>"; };
-		04D152DC16FA14670025BCEC /* SettingLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingLayer.h; sourceTree = "<group>"; };
-		04D152DD16FA14670025BCEC /* SettingLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingLayer.m; sourceTree = "<group>"; };
-		04D152DE16FA14670025BCEC /* WinLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinLayer.h; sourceTree = "<group>"; };
-		04D152DF16FA14670025BCEC /* WinLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinLayer.m; sourceTree = "<group>"; };
-		04D152E916FA16670025BCEC /* MyBaseLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBaseLayer.h; sourceTree = "<group>"; };
-		04D152EA16FA16670025BCEC /* MyBaseLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBaseLayer.m; sourceTree = "<group>"; };
 		04E20D8B164C2978003EA611 /* boostloop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = boostloop.mp3; path = Resources/music/boostloop.mp3; sourceTree = "<group>"; };
 		04E20D8C164C2978003EA611 /* coin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = coin.wav; path = Resources/music/coin.wav; sourceTree = "<group>"; };
 		04E20D91164C2AC4003EA611 /* jump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = jump.wav; path = Resources/music/jump.wav; sourceTree = "<group>"; };
@@ -996,80 +999,67 @@
 			name = music;
 			sourceTree = "<group>";
 		};
-		04D152B216FA13DD0025BCEC /* util */ = {
+		04C44A3916FB3C06007288DC /* customview */ = {
 			isa = PBXGroup;
 			children = (
-				04D152B316FA13DD0025BCEC /* AudioUtil.h */,
-				04D152B416FA13DD0025BCEC /* AudioUtil.m */,
-				04D152B516FA13DD0025BCEC /* Constants.h */,
-				04D152B616FA13DD0025BCEC /* CUtil.h */,
-				04D152B716FA13DD0025BCEC /* DeviceSettings.h */,
-				04D152B816FA13DD0025BCEC /* DialogUtil.h */,
-				04D152B916FA13DD0025BCEC /* DialogUtil.m */,
-				04D152BA16FA13DD0025BCEC /* SysConfig.h */,
-				04D152BB16FA13DD0025BCEC /* SysConfig.m */,
+				04C44A3A16FB3C06007288DC /* MyBaseLayer.h */,
+				04C44A3B16FB3C06007288DC /* MyBaseLayer.m */,
+				04C44A3C16FB3C06007288DC /* MyCustomButton.h */,
+				04C44A3D16FB3C06007288DC /* MyCustomButton.m */,
+				04C44A3E16FB3C06007288DC /* MyCustomButtonItem.h */,
+				04C44A3F16FB3C06007288DC /* MyCustomButtonItem.m */,
+				04C44A4016FB3C06007288DC /* SlidingMenuGrid.h */,
+				04C44A4116FB3C06007288DC /* SlidingMenuGrid.m */,
+				04C44A4216FB3C06007288DC /* SpriteUtil.h */,
+				04C44A4316FB3C06007288DC /* SpriteUtil.m */,
 			);
-			name = util;
-			path = Classes/util;
+			path = customview;
 			sourceTree = "<group>";
 		};
-		04D152BF16FA14100025BCEC /* customview */ = {
+		04C44A4416FB3C06007288DC /* scene */ = {
 			isa = PBXGroup;
 			children = (
-				04D152C016FA14100025BCEC /* MyCustomButton.h */,
-				04D152C116FA14100025BCEC /* MyCustomButton.m */,
-				04D152C216FA14100025BCEC /* MyCustomButtonItem.h */,
-				04D152C316FA14100025BCEC /* MyCustomButtonItem.m */,
-				04D152C616FA14100025BCEC /* SlidingMenuGrid.h */,
-				04D152C716FA14100025BCEC /* SlidingMenuGrid.m */,
-				04D152E916FA16670025BCEC /* MyBaseLayer.h */,
-				04D152EA16FA16670025BCEC /* MyBaseLayer.m */,
+				04C44A4516FB3C06007288DC /* GameLayer.h */,
+				04C44A4616FB3C06007288DC /* GameLayer.m */,
+				04C44A4716FB3C06007288DC /* HelpLayer.h */,
+				04C44A4816FB3C06007288DC /* HelpLayer.m */,
+				04C44A4916FB3C06007288DC /* LoseLayer.h */,
+				04C44A4A16FB3C06007288DC /* LoseLayer.m */,
+				04C44A4B16FB3C06007288DC /* MenuLayer.h */,
+				04C44A4C16FB3C06007288DC /* MenuLayer.m */,
+				04C44A4D16FB3C06007288DC /* SettingLayer.h */,
+				04C44A4E16FB3C06007288DC /* SettingLayer.m */,
+				04C44A4F16FB3C06007288DC /* WinLayer.h */,
+				04C44A5016FB3C06007288DC /* WinLayer.m */,
 			);
-			name = customview;
-			path = Classes/customview;
+			path = scene;
 			sourceTree = "<group>";
 		};
-		04D152CC16FA14380025BCEC /* sprite */ = {
+		04C44A5116FB3C06007288DC /* sprite */ = {
 			isa = PBXGroup;
 			children = (
-				04D152CD16FA14390025BCEC /* BirdSprite.h */,
-				04D152CE16FA14390025BCEC /* BirdSprite.m */,
-				04D152CF16FA14390025BCEC /* BonusSprite.h */,
-				04D152D016FA14390025BCEC /* BonusSprite.m */,
+				04C44A5216FB3C06007288DC /* BirdSprite.h */,
+				04C44A5316FB3C06007288DC /* BirdSprite.m */,
+				04C44A5416FB3C06007288DC /* BonusSprite.h */,
+				04C44A5516FB3C06007288DC /* BonusSprite.m */,
 			);
-			name = sprite;
-			path = Classes/sprite;
+			path = sprite;
 			sourceTree = "<group>";
 		};
-		04D152D316FA14670025BCEC /* scene */ = {
+		04C44A5616FB3C06007288DC /* util */ = {
 			isa = PBXGroup;
 			children = (
-				04D152D416FA14670025BCEC /* GameLayer.h */,
-				04D152D516FA14670025BCEC /* GameLayer.m */,
-				04D152D616FA14670025BCEC /* HelpLayer.h */,
-				04D152D716FA14670025BCEC /* HelpLayer.m */,
-				04D152D816FA14670025BCEC /* LoseLayer.h */,
-				04D152D916FA14670025BCEC /* LoseLayer.m */,
-				04D152DA16FA14670025BCEC /* MenuLayer.h */,
-				04D152DB16FA14670025BCEC /* MenuLayer.m */,
-				04D152DC16FA14670025BCEC /* SettingLayer.h */,
-				04D152DD16FA14670025BCEC /* SettingLayer.m */,
-				04D152DE16FA14670025BCEC /* WinLayer.h */,
-				04D152DF16FA14670025BCEC /* WinLayer.m */,
+				04C44A5716FB3C06007288DC /* AudioUtil.h */,
+				04C44A5816FB3C06007288DC /* AudioUtil.m */,
+				04C44A5916FB3C06007288DC /* Constants.h */,
+				04C44A5A16FB3C06007288DC /* CUtil.h */,
+				04C44A5B16FB3C06007288DC /* DeviceSettings.h */,
+				04C44A5C16FB3C06007288DC /* DialogUtil.h */,
+				04C44A5D16FB3C06007288DC /* DialogUtil.m */,
+				04C44A5E16FB3C06007288DC /* SysConfig.h */,
+				04C44A5F16FB3C06007288DC /* SysConfig.m */,
 			);
-			name = scene;
-			path = Classes/scene;
-			sourceTree = "<group>";
-		};
-		04DE6D0A164E4BAD00E8828B /* mainview */ = {
-			isa = PBXGroup;
-			children = (
-				0482BF0816FA062700796A83 /* AppDelegate.h */,
-				0482BF0916FA062700796A83 /* AppDelegate.m */,
-				0482BDA816F9F85900796A83 /* HelloWorldLayer.h */,
-				0482BDA916F9F85900796A83 /* HelloWorldLayer.m */,
-			);
-			name = mainview;
+			path = util;
 			sourceTree = "<group>";
 		};
 		F49E734C15ACCF46009C8E84 = {
@@ -1110,12 +1100,15 @@
 		F49E736B15ACCF46009C8E84 /* birdjump */ = {
 			isa = PBXGroup;
 			children = (
-				04DE6D0A164E4BAD00E8828B /* mainview */,
-				04D152BF16FA14100025BCEC /* customview */,
-				04D152B216FA13DD0025BCEC /* util */,
-				04D152CC16FA14380025BCEC /* sprite */,
+				04C44A3316FB3BFA007288DC /* AppDelegate.h */,
+				04C44A3416FB3BFA007288DC /* AppDelegate.m */,
+				04C44A3516FB3BFA007288DC /* HelloWorldLayer.h */,
+				04C44A3616FB3BFA007288DC /* HelloWorldLayer.m */,
+				04C44A3916FB3C06007288DC /* customview */,
+				04C44A4416FB3C06007288DC /* scene */,
+				04C44A5116FB3C06007288DC /* sprite */,
+				04C44A5616FB3C06007288DC /* util */,
 				0482BDAB16F9F89800796A83 /* libs */,
-				04D152D316FA14670025BCEC /* scene */,
 				F49E736C15ACCF46009C8E84 /* resources */,
 				F49E74B915ACCF4A009C8E84 /* Supporting Files */,
 			);
@@ -1362,7 +1355,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F49E74BC15ACCF4A009C8E84 /* main.m in Sources */,
-				0482BDAA16F9F85900796A83 /* HelloWorldLayer.m in Sources */,
 				0482BE9F16F9F89900796A83 /* CCAction.m in Sources */,
 				0482BEA016F9F89900796A83 /* CCActionCamera.m in Sources */,
 				0482BEA116F9F89900796A83 /* CCActionCatmullRom.m in Sources */,
@@ -1463,22 +1455,24 @@
 				0482BF0216F9F89900796A83 /* vec2.c in Sources */,
 				0482BF0316F9F89900796A83 /* vec3.c in Sources */,
 				0482BF0416F9F89900796A83 /* vec4.c in Sources */,
-				0482BF0A16FA062700796A83 /* AppDelegate.m in Sources */,
-				04D152BC16FA13DD0025BCEC /* AudioUtil.m in Sources */,
-				04D152BD16FA13DD0025BCEC /* DialogUtil.m in Sources */,
-				04D152BE16FA13DD0025BCEC /* SysConfig.m in Sources */,
-				04D152C816FA14100025BCEC /* MyCustomButton.m in Sources */,
-				04D152C916FA14100025BCEC /* MyCustomButtonItem.m in Sources */,
-				04D152CB16FA14100025BCEC /* SlidingMenuGrid.m in Sources */,
-				04D152D116FA14390025BCEC /* BirdSprite.m in Sources */,
-				04D152D216FA14390025BCEC /* BonusSprite.m in Sources */,
-				04D152E016FA14670025BCEC /* GameLayer.m in Sources */,
-				04D152E116FA14670025BCEC /* HelpLayer.m in Sources */,
-				04D152E216FA14670025BCEC /* LoseLayer.m in Sources */,
-				04D152E316FA14670025BCEC /* MenuLayer.m in Sources */,
-				04D152E416FA14670025BCEC /* SettingLayer.m in Sources */,
-				04D152E516FA14670025BCEC /* WinLayer.m in Sources */,
-				04D152EB16FA16680025BCEC /* MyBaseLayer.m in Sources */,
+				04C44A3716FB3BFA007288DC /* AppDelegate.m in Sources */,
+				04C44A3816FB3BFA007288DC /* HelloWorldLayer.m in Sources */,
+				04C44A6016FB3C06007288DC /* MyBaseLayer.m in Sources */,
+				04C44A6116FB3C06007288DC /* MyCustomButton.m in Sources */,
+				04C44A6216FB3C06007288DC /* MyCustomButtonItem.m in Sources */,
+				04C44A6316FB3C06007288DC /* SlidingMenuGrid.m in Sources */,
+				04C44A6416FB3C06007288DC /* SpriteUtil.m in Sources */,
+				04C44A6516FB3C06007288DC /* GameLayer.m in Sources */,
+				04C44A6616FB3C06007288DC /* HelpLayer.m in Sources */,
+				04C44A6716FB3C06007288DC /* LoseLayer.m in Sources */,
+				04C44A6816FB3C06007288DC /* MenuLayer.m in Sources */,
+				04C44A6916FB3C06007288DC /* SettingLayer.m in Sources */,
+				04C44A6A16FB3C06007288DC /* WinLayer.m in Sources */,
+				04C44A6B16FB3C06007288DC /* BirdSprite.m in Sources */,
+				04C44A6C16FB3C06007288DC /* BonusSprite.m in Sources */,
+				04C44A6D16FB3C06007288DC /* AudioUtil.m in Sources */,
+				04C44A6E16FB3C06007288DC /* DialogUtil.m in Sources */,
+				04C44A6F16FB3C06007288DC /* SysConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

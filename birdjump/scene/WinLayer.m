@@ -80,7 +80,7 @@ enum{
     [self addChild:birdSprite];
     
     //分数
-    self.scoreLabel = [CCLabelBMFont labelWithString:[NSString stringWithFormat:kWIN_SCORE_MODEL,0,kLIFE_INIT] fntFile:@"futura-48.fnt"];
+    self.scoreLabel = [CCLabelBMFont labelWithString:[NSString stringWithFormat:kWIN_SCORE_MODEL,0 ] fntFile:@"futura-48.fnt"];
     scoreLabel.position=ccp(winSize.width/2, winSize.height*1/3);
     scoreLabel.scale=HD2SD_SCALE;
     [self addChild:scoreLabel];
@@ -92,29 +92,17 @@ enum{
     
     
     //操作菜单
-    CCSprite* mn= [CCSprite spriteWithSpriteFrameName:@"button_menu.png"];
-    CCSprite* ms= [CCSprite spriteWithSpriteFrameName:@"button_menu.png"];
-    ms.color=ccYELLOW;
-    CCMenuItemSprite* m=[CCMenuItemSprite itemFromNormalSprite:mn selectedSprite:ms target:self selector:@selector(menu)];
-    CCMenu* menuButton= [CCMenu menuWithItems:m, nil];
+    CCMenu* menuButton= [SpriteUtil createMenuWithFrame:@"button_menu.png" pressedColor:ccYELLOW target:self selector:@selector(menu)];
     menuButton.position=ccp(winSize.width/2-(IS_IPAD()?200:100), winSize.height*1/3-(IS_IPAD()?100:50));
     menuButton.Visible=NO;
     [self addChild:menuButton z:zAboveOperation tag:tMenu];
     
-    CCSprite* rn= [CCSprite spriteWithSpriteFrameName:@"button_refresh.png"];
-    CCSprite* rs= [CCSprite spriteWithSpriteFrameName:@"button_refresh.png"];
-    rs.color=ccYELLOW;
-    CCMenuItemSprite* r=[CCMenuItemSprite itemFromNormalSprite:rn selectedSprite:rs target:self selector:@selector(restart)];
-    CCMenu* restartButton= [CCMenu menuWithItems:r, nil];
+    CCMenu* restartButton= [SpriteUtil createMenuWithFrame:@"button_refresh.png" pressedColor:ccYELLOW target:self selector:@selector(restart)];
     restartButton.position=ccp(winSize.width/2, winSize.height*1/3-(IS_IPAD()?100:50));
     restartButton.Visible=NO;
     [self addChild:restartButton z:zAboveOperation tag:tRefresh];
     
-    CCSprite* nn= [CCSprite spriteWithSpriteFrameName:@"button_next_level.png"];
-    CCSprite* ns= [CCSprite spriteWithSpriteFrameName:@"button_next_level.png"];
-    ns.color=ccYELLOW;
-    CCMenuItemSprite* n=[CCMenuItemSprite itemFromNormalSprite:nn selectedSprite:ns target:self selector:@selector(nextLevel)];
-    CCMenu* nextLevelButton= [CCMenu menuWithItems:n, nil];
+    CCMenu* nextLevelButton= [SpriteUtil createMenuWithFrame:@"button_next_level.png" pressedColor:ccYELLOW target:self selector:@selector(nextLevel)];
     nextLevelButton.position=ccp(winSize.width/2+(IS_IPAD()?200:100), winSize.height*1/3-(IS_IPAD()?100:50));
     nextLevelButton.Visible=NO;
     [self addChild:nextLevelButton z:zAboveOperation tag:tNextLevel];

@@ -130,10 +130,8 @@ typedef enum{
 	totalScoreLabel.position = ccp(screenWidth/2-20,screenHeight-(IS_IPAD()?200:80));
     totalScoreLabel.scale=HD2SD_SCALE;
     
-    CCSprite* pn= [CCSprite spriteWithSpriteFrameName:@"button_pause.png"];
-    CCSprite* ps= [CCSprite spriteWithSpriteFrameName:@"button_pause.png"];
-    CCMenuItemSprite* p=[CCMenuItemSprite itemFromNormalSprite:pn selectedSprite:ps target:self selector:@selector(pauseGame)];
-    CCMenu* pauseButton= [CCMenu menuWithItems:p, nil];
+
+    CCMenu* pauseButton= [SpriteUtil createMenuWithFrame:@"button_pause.png" pressedColor:ccYELLOW target:self selector:@selector(pauseGame)];
     
     pauseButton.position=ccp(winSize.width-(IS_IPAD()?100:50), winSize.height -(IS_IPAD()?100:50));
     pauseButton.visible=NO;
@@ -146,64 +144,26 @@ typedef enum{
     
     //audio & music
     BOOL isAudioOn= [[NSUserDefaults standardUserDefaults] boolForKey:UDF_AUDIO];
-    CCSprite* audion,*audios;
-    if (isAudioOn) {
-        audion= [CCSprite spriteWithSpriteFrameName:@"button_audio.png"];
-        audios= [CCSprite spriteWithSpriteFrameName:@"button_audio.png"];
-    }else{
-        audion= [CCSprite spriteWithSpriteFrameName:@"button_audio_bar.png"];
-        audios= [CCSprite spriteWithSpriteFrameName:@"button_audio_bar.png"];
-    }
-    audios.color=ccYELLOW;
-    CCMenuItemSprite* audiosa=[CCMenuItemSprite itemFromNormalSprite:audion selectedSprite:audios target:self selector:@selector(audio:)];
-    audiosa.tag=tAudioItem;
-    CCMenu* audioButton= [CCMenu menuWithItems:audiosa, nil];
+    CCMenu* audioButton= [SpriteUtil createMenuWithFrame:(isAudioOn?@"button_audio.png":@"button_audio_bar.png" )pressedColor:ccYELLOW target:self selector:@selector(audio:)];
     audioButton.position=ccp(winSize.width /2-(IS_IPAD()?100:60), winSize.height*1/3+30);
     [pauseLayer addChild:audioButton z:zAboveOperation tag:tAudio];
     
     BOOL isMusicOn= [[NSUserDefaults standardUserDefaults] boolForKey:UDF_MUSIC];
-    CCSprite* musicn,*musics;
-    if (isMusicOn) {
-        musicn= [CCSprite spriteWithSpriteFrameName:@"button_music.png"];
-        musics= [CCSprite spriteWithSpriteFrameName:@"button_music.png"];
-    }else{
-        musicn= [CCSprite spriteWithSpriteFrameName:@"button_music_bar.png"];
-        musics= [CCSprite spriteWithSpriteFrameName:@"button_music_bar.png"];
-    }
-    musics.color=ccYELLOW;
-    CCMenuItemSprite* musicsa=[CCMenuItemSprite itemFromNormalSprite:musicn selectedSprite:musics target:self selector:@selector(music:)];
-    musicsa.tag=tMusicItem;
-    CCMenu* musicButton= [CCMenu menuWithItems:musicsa, nil];
+    CCMenu* musicButton= [SpriteUtil createMenuWithFrame:(isMusicOn?@"button_music.png":@"button_music_bar.png" )pressedColor:ccYELLOW target:self selector:@selector(music:)];
     musicButton.position=ccp(winSize.width /2+(IS_IPAD()?100:60), winSize.height*1/3+30);
     [pauseLayer addChild:musicButton z:zAboveOperation tag:tMusic];
     
     
     //menu & refresh & start
-    CCSprite* mn= [CCSprite spriteWithSpriteFrameName:@"button_menu.png"];
-    CCSprite* ms= [CCSprite spriteWithSpriteFrameName:@"button_menu.png"];
-    ms.color=ccYELLOW;
-    CCMenuItemSprite* msa=[CCMenuItemSprite itemFromNormalSprite:mn selectedSprite:ms target:self selector:@selector(menu)];
-    CCMenu* menuButton= [CCMenu menuWithItems:msa, nil];
+    CCMenu* menuButton= [SpriteUtil createMenuWithFrame:@"button_menu.png" pressedColor:ccYELLOW target:self selector:@selector(menu)];
     menuButton.position=ccp(winSize.width /2-(IS_IPAD()?200:100), winSize.height*1/3-100);
     [pauseLayer addChild:menuButton z:zAboveOperation];
     
-    
-    
-    CCSprite* rsn= [CCSprite spriteWithSpriteFrameName:@"button_refresh.png"];
-    CCSprite* rss= [CCSprite spriteWithSpriteFrameName:@"button_refresh.png"];
-    rss.color=ccYELLOW;
-    CCMenuItemSprite* rsa=[CCMenuItemSprite itemFromNormalSprite:rsn selectedSprite:rss target:self selector:@selector(restartGame)];
-    CCMenu* restartButton= [CCMenu menuWithItems:rsa, nil];
+    CCMenu* restartButton=[SpriteUtil createMenuWithFrame:@"button_refresh.png" pressedColor:ccYELLOW target:self selector:@selector(restartGame)];
     restartButton.position=ccp(winSize.width /2, winSize.height*1/3-100);
     [pauseLayer addChild:restartButton z:zAboveOperation];
     
-    
-    
-    CCSprite* rn= [CCSprite spriteWithSpriteFrameName:@"button_start.png"];
-    CCSprite* rs= [CCSprite spriteWithSpriteFrameName:@"button_start.png"];
-    rs.color=ccYELLOW;
-    CCMenuItemSprite* r=[CCMenuItemSprite itemFromNormalSprite:rn selectedSprite:rs target:self selector:@selector(resumeGame)];
-    CCMenu* resumeButton= [CCMenu menuWithItems:r, nil];
+    CCMenu* resumeButton= [SpriteUtil createMenuWithFrame:@"button_start.png" pressedColor:ccYELLOW target:self selector:@selector(resumeGame)];
     resumeButton.position=ccp(winSize.width/2+(IS_IPAD()?200:100), winSize.height*1/3-100);
     [pauseLayer addChild:resumeButton z:zAboveOperation];
     
@@ -478,7 +438,7 @@ typedef enum{
             RANDOM_SEED();
             int mRate=rand()%(2*60*10);//60,因为step在schedule，10秒为单位
             //显示频率太大了，变为原来的1/4,
-            NSLog(@"----mRate:%d",mRate);
+//            NSLog(@"----mRate:%d",mRate);
             if (mRate!=0) {
                 return;
             }
@@ -730,7 +690,7 @@ typedef enum{
 -(void) registerWithTouchDispatcher
 {
     //swallowsTouches决定是否传递touches事件给touch chain
-	[[CCTouchDispatcher sharedDispatcher] addTargetedDelegate:self priority:INT_MIN+1 swallowsTouches:NO];
+	[[[CCDirector sharedDirector]touchDispatcher] addTargetedDelegate:self priority:INT_MIN+1 swallowsTouches:NO];
 }
 //return NO会取消后继的touch事件
 -(BOOL)ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
