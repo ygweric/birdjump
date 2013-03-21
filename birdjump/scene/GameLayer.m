@@ -38,6 +38,11 @@ typedef enum{
     
     //1000分加一人，单个关卡增加，不影响其余关卡
 @private int scoreForLife;
+    
+    CGPoint lastPosition;
+    UIPinchGestureRecognizer *gestureRecognizerPin;
+    UIPanGestureRecognizer *gestureRecognizerPan;
+    UITapGestureRecognizer *gestureRecognizerTap;
 }
 
 @synthesize isTrickWorking;
@@ -197,6 +202,15 @@ typedef enum{
     [self getChildByTag:tPause].visible=YES;
     
     self.isTouchEnabled=YES;
+    
+    gestureRecognizerPin = [[[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(handlePinchFrom:)] autorelease];
+    [[[CCDirector sharedDirector] view] addGestureRecognizer:gestureRecognizerPin];
+    gestureRecognizerPan = [[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanFrom:)] autorelease];
+    [[[CCDirector sharedDirector] view] addGestureRecognizer:gestureRecognizerPan];
+    gestureRecognizerTap = [[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleDoubleTapGesture:)]autorelease];
+    gestureRecognizerTap.numberOfTapsRequired = 2;
+    [[[CCDirector sharedDirector] view] addGestureRecognizer:gestureRecognizerTap];
+    
     
 	return self;
 }
@@ -360,6 +374,10 @@ typedef enum{
 }
 -(void) menu
 {
+    [[[CCDirector sharedDirector] view] removeGestureRecognizer:gestureRecognizerPin];
+    [[[CCDirector sharedDirector] view] removeGestureRecognizer:gestureRecognizerPan];
+    [[[CCDirector sharedDirector] view] removeGestureRecognizer:gestureRecognizerTap];
+    
 	CCScene *sc = [CCScene node];
 	[sc addChild:[MenuLayer node]];
 	[[CCDirector sharedDirector] replaceScene:  [CCTransitionSplitRows transitionWithDuration:1.0f scene:sc]];
@@ -571,14 +589,6 @@ typedef enum{
 	
 	if (cpt.y >= ly.layerSize.height)
 		return -1;
-    //	NSLog(@"tile gid 14*588:%d,",[ly tileGIDAt:ccp(14, 588)]);
-    //    NSLog(@"tile gid 13*589:%d,",[ly tileGIDAt:ccp(13, 589)]);
-    //    NSLog(@"tile gid 13*589:%d,",[ly tileGIDAt:ccp(13, 589)]);
-    //    NSLog(@"tile gid 13*592:%d,",[ly tileGIDAt:ccp(13, 592)]);
-    //    NSLog(@"tile gid 13*593:%d,",[ly tileGIDAt:ccp(13, 593)]);
-    //    NSLog(@"tile gid 14*593:%d,",[ly tileGIDAt:ccp(14, 593)]);
-    //    NSLog(@"tile gid 14*592:%d,",[ly tileGIDAt:ccp(14, 592)]);
-    //    NSLog(@"tild gid of %f,%f is %d",cpt.x,cpt.y,[ly tileGIDAt:cpt]);
 	return [ly tileGIDAt:cpt];
 }
 
@@ -662,6 +672,50 @@ typedef enum{
 	
 }
 
+#pragma mark guesture
+-(void) handlePinchFrom:(UIPinchGestureRecognizer*)recognizer
+{
+//    CCLOG(@"handlePinchFrom----");
+}
+
+- (void)handlePanFrom:(UIPanGestureRecognizer *)recognizer
+{
+//    CCLOG(@"handlePanFrom------");
+    if (!gameSuspended) {
+        gameSuspended=YES;
+        [self unschedule:@selector(step:)];
+    }
+    if (recognizer.state == UIGestureRecognizerStateBegan)
+    {
+        lastPosition = gameWorld.position;
+        
+    } else if (recognizer.state == UIGestureRecognizerStateChanged)
+    {
+        
+        CGPoint translation = [recognizer translationInView:recognizer.view];
+        translation = ccp(translation.x, -translation.y);
+        translation = ccpMult(translation, 0.7f);
+        CGPoint newPos = ccpAdd(lastPosition, translation);
+        gameWorld.position = newPos;
+    }
+    
+}
+
+- (void)handleDoubleTapGesture:(UITapGestureRecognizer *)sender {
+    if (sender.state == UIGestureRecognizerStateRecognized) {
+//        CCLOG(@"handleDoubleTapGesture------");
+        if (gameSuspended && !pauseLayer.visible) {
+            gameSuspended=NO;
+            isTouching=NO;
+            memset(touchInfos, 0, sizeof(touchInfos));
+            [self schedule:@selector(step:)];
+            
+            CCSpriteBatchNode *charaBatchNode = (CCSpriteBatchNode *)[gameWorld getChildByTag:tCharacterManager];
+            BirdSprite *bird = (BirdSprite*)[charaBatchNode getChildByTag:tBird];
+            gameWorld.position=bird.position;
+        }  
+    }
+}
 
 #pragma mark 重力判断
 //UIAccelerometer 代理
